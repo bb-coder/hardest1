@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "StageRecord.h"
+#import "Singleton.h"
 @interface StageRecordTool : NSObject
-
-+ (StageRecordTool *) shareStageRecordTool;
-
+singletonInterface(StageRecordTool)
 //读档
 - (StageRecord *) stageRecordWithId:(int) StageId;
 

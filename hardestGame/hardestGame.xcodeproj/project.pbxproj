@@ -333,6 +333,7 @@
 		DD5C7E141990C6A5002E89FE /* StageRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageRecord.m; sourceTree = "<group>"; };
 		DD5C7E161990C90E002E89FE /* StageRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageRecordTool.h; sourceTree = "<group>"; };
 		DD5C7E171990C90E002E89FE /* StageRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageRecordTool.m; sourceTree = "<group>"; };
+		DD5C7E331991190E002E89FE /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		DD762D0D1990052600C3ED45 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		DD762D0E1990052600C3ED45 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		DD762D101990057300C3ED45 /* StageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageListView.h; sourceTree = "<group>"; };
@@ -767,6 +768,7 @@
 				DDCDCF64198F4E3300A7C5F7 /* SoundName.h */,
 				DD5C7E161990C90E002E89FE /* StageRecordTool.h */,
 				DD5C7E171990C90E002E89FE /* StageRecordTool.m */,
+				DD5C7E331991190E002E89FE /* Singleton.h */,
 			);
 			path = tools;
 			sourceTree = "<group>";

@@ -17,27 +17,7 @@
 @end
 
 
-static StageRecordTool * stageRecordTool;
-
-@implementation StageRecordTool
-
-+(id)allocWithZone:(struct _NSZone *)zone
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        stageRecordTool = [super allocWithZone:zone];
-    });
-    return stageRecordTool;
-}
-
-+(StageRecordTool *)shareStageRecordTool
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        stageRecordTool = [[self alloc]init];
-    });
-    return stageRecordTool;
-}
+singletonImplementation(StageRecordTool)
 
 - (instancetype)init
 {

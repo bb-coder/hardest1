@@ -51,15 +51,15 @@
 {
     [self.lockable removeFromSuperview];
     [self.lockable setHidden:NO];
+    self.lockImage.image = [UIImage imageNamed:@"select_stage_new.png"];    
     [UIView animateWithDuration:.25 animations:^{
         CGRect frame = self.locker.frame;
         frame.origin.y += Iphone5?480:568;
         self.locker.frame = frame;
     } completion:^(BOOL finished) {
-        [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundNewPopFileName];
+        [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundNewPopFileName];
         [self.locker removeFromSuperview];
         self.userInteractionEnabled = NO;
-        self.lockImage.image = [UIImage imageNamed:@"select_stage_new.png"];
         
         [self.currentStage setHidden:NO];
         [self.currentStage.layer addAnimation:[self shakeScaleAnimationGroup] forKey:nil];
@@ -70,7 +70,7 @@
     
     CAAnimationGroup * group =[self shakeScaleAnimationGroup];
     group.delegate = self;
-    [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundChainDropFileName];
+    [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundChainDropFileName];
     group.duration = 0.4;
     [self.layer addAnimation:group forKey:nil];
     

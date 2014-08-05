@@ -19,11 +19,11 @@
     [super viewDidLoad];
     [self.view setFullScreenBgImageWithName:@"setting_bg.jpg"];
     // Do any additional setup after loading the view from its nib.
-    if ([[SoundTool shareSoundToolInstance] isMusicSilent])
+    if ([[SoundTool shareSoundTool] isMusicSilent])
         [_musicButton setTitle:@"音乐 ［关］" forState:UIControlStateNormal];
     else
         [_musicButton setTitle:@"音乐 ［开］" forState:UIControlStateNormal];
-    if ([[SoundTool shareSoundToolInstance] isSoundSilent])
+    if ([[SoundTool shareSoundTool] isSoundSilent])
         [_soundButton setTitle:@"音效 ［关］" forState:UIControlStateNormal];
     else
         [_soundButton setTitle:@"音效 ［开］" forState:UIControlStateNormal];
@@ -38,32 +38,32 @@
 
 - (IBAction)backClick {
     [self.navigationController popViewControllerAnimated:NO];
-    [[SoundTool shareSoundToolInstance]playBtnSoundWithFileName:kSoundClickButtonFileName];
+    [[SoundTool shareSoundTool]playBtnSoundWithFileName:kSoundClickButtonFileName];
 }
 
 - (IBAction)musicClick:(UIButton *)sender {
-    [[SoundTool shareSoundToolInstance]playBtnSoundWithFileName:kSoundClickButtonFileName];
-    if (![[SoundTool shareSoundToolInstance] isMusicSilent]) {
+    [[SoundTool shareSoundTool]playBtnSoundWithFileName:kSoundClickButtonFileName];
+    if (![[SoundTool shareSoundTool] isMusicSilent]) {
         [sender setTitle:@"音乐 ［关］" forState:UIControlStateNormal];
-        [[SoundTool shareSoundToolInstance] setMusicSilent:YES];
+        [[SoundTool shareSoundTool] setMusicSilent:YES];
     }
     else
     {
         [sender setTitle:@"音乐 ［开］" forState:UIControlStateNormal];
-        [[SoundTool shareSoundToolInstance] setMusicSilent:NO];
+        [[SoundTool shareSoundTool] setMusicSilent:NO];
     }
 }
 
 - (IBAction)soundClick:(UIButton *)sender {
-        [[SoundTool shareSoundToolInstance]playBtnSoundWithFileName:kSoundClickButtonFileName];
-    if (![[SoundTool shareSoundToolInstance] isSoundSilent]) {
+        [[SoundTool shareSoundTool]playBtnSoundWithFileName:kSoundClickButtonFileName];
+    if (![[SoundTool shareSoundTool] isSoundSilent]) {
         [sender setTitle:@"音效 ［关］" forState:UIControlStateNormal];
-        [[SoundTool shareSoundToolInstance] setSoundSilent:YES];
+        [[SoundTool shareSoundTool] setSoundSilent:YES];
     }
     else
     {
         [sender setTitle:@"音效 ［开］" forState:UIControlStateNormal];
-        [[SoundTool shareSoundToolInstance] setSoundSilent:NO];
+        [[SoundTool shareSoundTool] setSoundSilent:NO];
     }
 }
 

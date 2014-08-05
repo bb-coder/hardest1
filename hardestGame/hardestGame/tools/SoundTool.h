@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import "SoundName.h"
+#import "Singleton.h"
 @interface SoundTool : NSObject
 
 - (void) playBgMusic;
 - (void) playBtnSoundWithFileName:(NSString *) fileName;
 @property (nonatomic,setter = setMusicSilent:) BOOL isMusicSilent;
 @property (nonatomic,setter = setSoundSilent:) BOOL isSoundSilent;
-+ (instancetype) shareSoundToolInstance;
+singletonInterface(SoundTool)
 @end

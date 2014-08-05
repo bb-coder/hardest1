@@ -28,7 +28,7 @@
    
 }
 - (IBAction)backClick {
-    [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+    [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
     [self.navigationController popViewControllerAnimated:NO];
 }
 

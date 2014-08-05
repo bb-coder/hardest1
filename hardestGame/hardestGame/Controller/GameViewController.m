@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setFullScreenBgImageWithName:@"home_bg.jpg"];
-    [[SoundTool shareSoundToolInstance] playBgMusic];
+    [[SoundTool shareSoundTool] playBgMusic];
     //加载plist中的按钮位置
     NSString *  path= [[NSBundle mainBundle] pathForResource:@"home.plist" ofType:nil];
     
@@ -67,31 +67,31 @@
     CGPoint point = [touch locationInView:self.view];
     
     if (CGRectContainsPoint(_btnPlayRect, point)) {
-        [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+        [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
                NSLog(@"点击了play");
         [self performSegueWithIdentifier:@"Stage" sender:nil];
         
     }
     else if (CGRectContainsPoint(_btnSetRect, point))
     {
-        [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+        [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
         NSLog(@"点击了set");
         [self performSegueWithIdentifier:@"pushSetting" sender:nil];
     }else if (CGRectContainsPoint(_btnGameRect, point))
     {
-        [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+        [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
         NSLog(@"点击了game");
     }else if (CGRectContainsPoint(_btnLauRect, point))
     {
-       [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+       [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
         NSLog(@"点击了lauguage");
     }else if (CGRectContainsPoint(_btnRankRect, point))
     {
-       [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+       [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
                 NSLog(@"点击了rank");
     }else if (CGRectContainsPoint(_btnGetRect, point))
     {
-       [[SoundTool shareSoundToolInstance] playBtnSoundWithFileName:kSoundClickButtonFileName];
+       [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
         NSLog(@"点击了get");
     }
     

@@ -15,17 +15,7 @@
 }
 @end
 static SoundTool * tool;
-@implementation SoundTool
-+(id)allocWithZone:(struct _NSZone *)zone
-{
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        tool = [super allocWithZone:zone];
-    });
-    return tool;
-}
-
+singletonImplementation(SoundTool)
 
 - (instancetype)init
 {
@@ -39,14 +29,7 @@ static SoundTool * tool;
     return self;
 }
 
-+ (instancetype) shareSoundToolInstance
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        tool = [[self alloc]init];
-    });
-    return tool;
-}
+
 
 -(void)loadMusic
 {
