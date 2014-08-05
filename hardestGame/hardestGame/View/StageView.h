@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
 @property (weak, nonatomic) IBOutlet UIImageView *currentStage;
 @property (weak, nonatomic) IBOutlet UIImageView *priceImage;
-@property (weak, nonatomic) IBOutlet UIImageView *price;
+@property (weak, nonatomic) IBOutlet UIImageView *shadowImage;
 
 @property (nonatomic,strong) StageInfo * info;
 @end

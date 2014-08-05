@@ -7,73 +7,73 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1" customClass="StageView">
-            <rect key="frame" x="0.0" y="0.0" width="110" height="93"/>
+            <rect key="frame" x="0.0" y="0.0" width="130" height="110"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_image01.png" id="3">
-                    <rect key="frame" x="10" y="10" width="90" height="73"/>
+                    <rect key="frame" x="10" y="8" width="110" height="90"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <view alpha="0.5" contentMode="scaleToFill" id="14">
-                    <rect key="frame" x="10" y="10" width="90" height="73"/>
+                    <rect key="frame" x="10" y="8" width="110" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_stage_normal.png" id="29">
-                    <rect key="frame" x="0.0" y="0.0" width="110" height="93"/>
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="110"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="54">
-                    <rect key="frame" x="-2" y="-2" width="25" height="25"/>
+                    <rect key="frame" x="-2" y="-2" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="10" backgroundImage="select_digital.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="select_new.png" id="64">
+                    <rect key="frame" x="30" y="-6" width="70" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <view contentMode="scaleToFill" id="80">
-                    <rect key="frame" x="0.0" y="24" width="110" height="70"/>
+                    <rect key="frame" x="0.0" y="24" width="130" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_lock_right.png" id="100">
-                            <rect key="frame" x="63" y="0.0" width="45" height="38"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_lock_left.png" id="87">
+                            <rect key="frame" x="0.0" y="6" width="60" height="45"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_lock_left.png" id="87">
-                            <rect key="frame" x="0.0" y="0.0" width="45" height="38"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_lock_right.png" id="100">
+                            <rect key="frame" x="67" y="6" width="60" height="45"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="select_lock_center.png" id="109">
-                            <rect key="frame" x="25" y="-2" width="60" height="67"/>
+                            <rect key="frame" x="32" y="-1" width="65" height="73"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="select_new.png" id="64">
-                    <rect key="frame" x="20" y="-8" width="70" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="select_shadow.png" id="114">
-                    <rect key="frame" x="52" y="75" width="60" height="11"/>
+                    <rect key="frame" x="66" y="100" width="60" height="11"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="select_stage_s.png" id="115">
-                    <rect key="frame" x="57" y="25" width="45" height="61"/>
+                    <rect key="frame" x="76" y="53" width="40" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="currentStage" destination="64" id="qwq-1S-Xva"/>
-                <outlet property="icon" destination="3" id="Pgz-fA-KNS"/>
-                <outlet property="lockImage" destination="29" id="btx-Rd-CGE"/>
-                <outlet property="lockable" destination="14" id="yuS-v0-BXv"/>
-                <outlet property="locker" destination="80" id="N2H-eD-BJv"/>
-                <outlet property="price" destination="115" id="eAO-iP-awM"/>
-                <outlet property="priceImage" destination="114" id="RWm-u9-Wwc"/>
-                <outlet property="stageId" destination="54" id="SOB-t9-EXJ"/>
+                <outlet property="currentStage" destination="64" id="wIt-1h-gu9"/>
+                <outlet property="icon" destination="3" id="iKq-8t-yZg"/>
+                <outlet property="lockImage" destination="29" id="3aL-z7-QOv"/>
+                <outlet property="lockable" destination="14" id="YgU-2Y-rgO"/>
+                <outlet property="locker" destination="80" id="oRs-6C-Fel"/>
+                <outlet property="priceImage" destination="115" id="qIQ-Xf-uRN"/>
+                <outlet property="shadowImage" destination="114" id="AbC-99-sR4"/>
+                <outlet property="stageId" destination="54" id="LOf-DU-hra"/>
             </connections>
         </view>
     </objects>

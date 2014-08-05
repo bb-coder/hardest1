@@ -10,6 +10,7 @@
 #import "FullBgView.h"
 #import "StageInfo.h"
 #import "StageView.h"
+#import "StageRecordTool.h"
 @implementation StageListView
 
 
@@ -52,24 +53,34 @@
     
     // 固定数值
     CGSize viewSize = self.frame.size;
-    CGFloat stageViewWdith = 110;
-    CGFloat stageViewHeight = 93;
+    CGFloat stageViewWdith = 130;
+    CGFloat stageViewHeight = 110;
     
     
     // 水平间距
-    CGFloat marginX = 30;
+    CGFloat marginX = 15;
     // 垂直间距
-    CGFloat marginY = 30;
+    CGFloat marginY = 15;
     
     // 开始的y
     CGFloat startY = 90 + (Iphone5?44:0);
     for (int i = 0; i < count; i++) {
         NSDictionary * dict = array[i];
         NSArray * views = [[NSBundle mainBundle] loadNibNamed:@"StageView" owner:nil options:nil];
+        
+        //加载关卡信息
         StageInfo * info = [StageInfo setStageInfoWithDict:dict];
         info.stageId = i + 1;
+        
+        //加载关卡纪录
+        StageRecord *stageRecord = [[StageRecordTool shareStageRecordTool]stageRecordWithId:i+1];
+        info.stageRecord = stageRecord;
+        
+        
         StageView * stageView = views[0];
         stageView.info = info;
+        
+        
         CGFloat startX = (viewSize.width - 2 * stageViewWdith - marginX) * 0.5 + (i/6) * viewSize.width;
         
         // y

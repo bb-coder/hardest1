@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class  StageRecord;
 @interface StageInfo : NSObject
 @property (nonatomic,copy) NSString * icon;
 @property (nonatomic,copy) NSString * title;
@@ -15,6 +15,7 @@
 @property (nonatomic,copy) NSString * max;
 @property (nonatomic,copy) NSString * min;
 @property (nonatomic,assign) NSInteger stageId;
+@property (nonatomic,strong) StageRecord * stageRecord;
 
 + (instancetype) setStageInfoWithDict:(NSDictionary *) dict;
 @end

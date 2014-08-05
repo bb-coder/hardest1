@@ -154,10 +154,13 @@
 		DD5C7E121990B4EE002E89FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C7E111990B4EE002E89FE /* QuartzCore.framework */; };
 		DD5C7E151990C6A5002E89FE /* StageRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C7E141990C6A5002E89FE /* StageRecord.m */; };
 		DD5C7E181990C90E002E89FE /* StageRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C7E171990C90E002E89FE /* StageRecordTool.m */; };
+		DD5C7E5419913EA3002E89FE /* select_stage_s01.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5119913EA3002E89FE /* select_stage_s01.png */; };
+		DD5C7E5519913EA3002E89FE /* select_stage_s02.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5219913EA3002E89FE /* select_stage_s02.png */; };
+		DD5C7E5619913EA3002E89FE /* select_stage_s03.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5319913EA3002E89FE /* select_stage_s03.png */; };
+		DD5C7E5819914736002E89FE /* StageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5719914736002E89FE /* StageView.xib */; };
 		DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D0E1990052600C3ED45 /* PlayViewController.m */; };
 		DD762D121990057300C3ED45 /* StageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D111990057300C3ED45 /* StageListView.m */; };
 		DD762D15199005D000C3ED45 /* StageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D14199005D000C3ED45 /* StageView.m */; };
-		DD762D191990063500C3ED45 /* StageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD762D181990063500C3ED45 /* StageView.xib */; };
 		DD8F9780198E8E3F00D4F80D /* FullBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F977F198E8E3F00D4F80D /* FullBgView.m */; };
 		DD8F9784198E931D00D4F80D /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F9783198E931D00D4F80D /* UIView+Image.m */; };
 		DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF54198F272500A7C5F7 /* SettingViewController.m */; };
@@ -334,13 +337,16 @@
 		DD5C7E161990C90E002E89FE /* StageRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageRecordTool.h; sourceTree = "<group>"; };
 		DD5C7E171990C90E002E89FE /* StageRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageRecordTool.m; sourceTree = "<group>"; };
 		DD5C7E331991190E002E89FE /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		DD5C7E5119913EA3002E89FE /* select_stage_s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s01.png; sourceTree = "<group>"; };
+		DD5C7E5219913EA3002E89FE /* select_stage_s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s02.png; sourceTree = "<group>"; };
+		DD5C7E5319913EA3002E89FE /* select_stage_s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s03.png; sourceTree = "<group>"; };
+		DD5C7E5719914736002E89FE /* StageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StageView.xib; sourceTree = "<group>"; };
 		DD762D0D1990052600C3ED45 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		DD762D0E1990052600C3ED45 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		DD762D101990057300C3ED45 /* StageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageListView.h; sourceTree = "<group>"; };
 		DD762D111990057300C3ED45 /* StageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageListView.m; sourceTree = "<group>"; };
 		DD762D13199005D000C3ED45 /* StageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageView.h; sourceTree = "<group>"; };
 		DD762D14199005D000C3ED45 /* StageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageView.m; sourceTree = "<group>"; };
-		DD762D181990063500C3ED45 /* StageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StageView.xib; sourceTree = "<group>"; };
 		DD8F977E198E8E3F00D4F80D /* FullBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullBgView.h; sourceTree = "<group>"; };
 		DD8F977F198E8E3F00D4F80D /* FullBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullBgView.m; sourceTree = "<group>"; };
 		DD8F9782198E931D00D4F80D /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
@@ -679,6 +685,9 @@
 				DD0B66A3198E7E0D0020CC9F /* select_stage_normal.png */,
 				DD0B66A4198E7E0D0020CC9F /* select_stage_s.png */,
 				DD0B66A5198E7E0D0020CC9F /* select_unlock.png */,
+				DD5C7E5119913EA3002E89FE /* select_stage_s01.png */,
+				DD5C7E5219913EA3002E89FE /* select_stage_s02.png */,
+				DD5C7E5319913EA3002E89FE /* select_stage_s03.png */,
 			);
 			path = stage;
 			sourceTree = "<group>";
@@ -746,7 +755,7 @@
 				DD762D111990057300C3ED45 /* StageListView.m */,
 				DD762D13199005D000C3ED45 /* StageView.h */,
 				DD762D14199005D000C3ED45 /* StageView.m */,
-				DD762D181990063500C3ED45 /* StageView.xib */,
+				DD5C7E5719914736002E89FE /* StageView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -872,6 +881,7 @@
 				DD0B66E7198E7E0D0020CC9F /* scene_light04.png in Resources */,
 				DD0B6722198E7E0D0020CC9F /* select_stage_d.png in Resources */,
 				DD0B6708198E7E0D0020CC9F /* select_image09.png in Resources */,
+				DD5C7E5619913EA3002E89FE /* select_stage_s03.png in Resources */,
 				DD0B671A198E7E0D0020CC9F /* select_lock_left.png in Resources */,
 				DD0B66F8198E7E0D0020CC9F /* go.png in Resources */,
 				DD0B66BB198E7E0D0020CC9F /* guide11.png in Resources */,
@@ -879,6 +889,7 @@
 				DD0B66E5198E7E0D0020CC9F /* scene_light02.png in Resources */,
 				DD0B66C0198E7E0D0020CC9F /* Default-568h@2x.png in Resources */,
 				DD0B66CF198E7E0D0020CC9F /* big_rbt.png in Resources */,
+				DD5C7E5519913EA3002E89FE /* select_stage_s02.png in Resources */,
 				DD0B66E4198E7E0D0020CC9F /* scene_light01.png in Resources */,
 				DD0B66DE198E7E0D0020CC9F /* new_record.png in Resources */,
 				DD0B66DB198E7E0D0020CC9F /* ready_score_arrow.png in Resources */,
@@ -900,6 +911,7 @@
 				DD0B66CD198E7E0D0020CC9F /* bbt.png in Resources */,
 				DD0B671B198E7E0D0020CC9F /* select_lock_right.png in Resources */,
 				DD0B66CA198E7E0D0020CC9F /* Icon@2x.png in Resources */,
+				DD5C7E5419913EA3002E89FE /* select_stage_s01.png in Resources */,
 				DD0B6706198E7E0D0020CC9F /* select_image07.png in Resources */,
 				DD0B66F0198E7E0D0020CC9F /* score_hint.png in Resources */,
 				DD0B66F4198E7E0D0020CC9F /* 01-feet01.png in Resources */,
@@ -923,6 +935,7 @@
 				DD0B66FF198E7E0D0020CC9F /* select_hard_bg.jpg in Resources */,
 				DD0B66B1198E7E0D0020CC9F /* bt_blue.png in Resources */,
 				DD0B66FA198E7E0D0020CC9F /* ing_retry.png in Resources */,
+				DD5C7E5819914736002E89FE /* StageView.xib in Resources */,
 				DD0B66CC198E7E0D0020CC9F /* bbg2.jpeg in Resources */,
 				DD0B6700198E7E0D0020CC9F /* select_image01.png in Resources */,
 				DD0B670D198E7E0D0020CC9F /* select_image14.png in Resources */,
@@ -970,7 +983,6 @@
 				DD0B66D9198E7E0D0020CC9F /* ready_play.png in Resources */,
 				DD0B6726198E7E0D0020CC9F /* select_stage_normal.png in Resources */,
 				DD0B670C198E7E0D0020CC9F /* select_image13.png in Resources */,
-				DD762D191990063500C3ED45 /* StageView.xib in Resources */,
 				DD0B670E198E7E0D0020CC9F /* select_image15.png in Resources */,
 				DD0B66C8198E7E0D0020CC9F /* Icon-Small@2x.png in Resources */,
 				DD0B66C9198E7E0D0020CC9F /* Icon.png in Resources */,

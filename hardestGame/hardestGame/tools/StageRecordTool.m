@@ -28,6 +28,9 @@ singletonImplementation(StageRecordTool)
         if(!_allStageRecords)
         {
             _allStageRecords =[NSMutableDictionary dictionary];
+            StageRecord * stageRecord =[[StageRecord alloc]init];
+            stageRecord.stageId = 1;
+            [_allStageRecords setObject:stageRecord forKey:@(1)];
         }
     }
     return self;
