@@ -115,6 +115,9 @@
                                 <state key="normal" backgroundImage="ready_btplay.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aWB-34-SQt" kind="push" id="UiX-KA-Eda"/>
+                                </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ready_play.png" id="Ho2-l1-Jan">
                                 <rect key="frame" x="150" y="10" width="143" height="45"/>
@@ -268,6 +271,138 @@
             </objects>
             <point key="canvasLocation" x="1054" y="-5"/>
         </scene>
+        <!--Stage01 Controller-->
+        <scene sceneID="ZmA-RT-Cvm">
+            <objects>
+                <viewController id="aWB-34-SQt" customClass="Stage01Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFq-0Y-UsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rbg1.jpeg" id="zZE-bw-Syu">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ybg1.jpeg" id="DnY-qi-gCf">
+                                <rect key="frame" x="107" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbg1.jpeg" id="Nvt-3k-0lt">
+                                <rect key="frame" x="213" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="85S-em-8ir">
+                                <rect key="frame" x="0.0" y="376" width="107" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="13" minY="23" maxX="13" maxY="23"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="rbt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="featherClick:" destination="aWB-34-SQt" eventType="touchDown" id="ov5-Nu-QMu"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="6io-wk-0kT">
+                                <rect key="frame" x="107" y="376" width="107" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="13" minY="23" maxX="13" maxY="23"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="ybt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="featherClick:" destination="aWB-34-SQt" eventType="touchDown" id="stQ-xI-8Xh"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="9cd-XA-Y3Q">
+                                <rect key="frame" x="213" y="376" width="107" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="13" minY="23" maxX="13" maxY="23"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="bbt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="featherClick:" destination="aWB-34-SQt" eventType="touchDown" id="ubA-bd-Ypg"/>
+                                </connections>
+                            </button>
+                            <view appearanceType="aqua" contentMode="scaleToFill" id="cBj-OH-zcW" customClass="FeetView">
+                                <rect key="frame" x="0.0" y="182" width="107" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_shadow.png" id="5pl-de-hAe">
+                                        <rect key="frame" x="3" y="142" width="101" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01-feet01.png" id="vge-7E-7bI">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="feet" destination="vge-7E-7bI" id="iBP-HD-IsJ"/>
+                                </connections>
+                            </view>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LRT-g8-X5D">
+                                <rect key="frame" x="272" y="347" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01-bigfeather.png" id="r0O-J4-ezj" customClass="FeatherView">
+                                <rect key="frame" x="41" y="212" width="150" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ready.png" id="t6d-za-oBk" customClass="ReadyGoView">
+                                <rect key="frame" x="20" y="192" width="280" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view appearanceType="aqua" contentMode="scaleToFill" id="MSJ-de-18M" customClass="ScoreBoardView">
+                                <rect key="frame" x="-54" y="56" width="320" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ing_word.png" id="BQP-60-Q6b">
+                                        <rect key="frame" x="0.0" y="11" width="320" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Bf-nY-dDQ">
+                                        <rect key="frame" x="106" y="0.0" width="143" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="79"/>
+                                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Llu-Kb-rbq">
+                                        <rect key="frame" x="269" y="0.0" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="40"/>
+                                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qfJ-E1-hgg"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="featherView" destination="r0O-J4-ezj" id="isM-nC-vDc"/>
+                        <outlet property="feetView" destination="cBj-OH-zcW" id="FP0-kp-dKj"/>
+                        <outlet property="readyGoView" destination="t6d-za-oBk" id="Lz1-iL-Ztp"/>
+                        <outlet property="scoreBoardView" destination="MSJ-de-18M" id="X1b-r4-3mJ"/>
+                        <outlet property="scoreLabel" destination="LRT-g8-X5D" id="iOV-Bz-3q9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fH-HJ-SwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="-5"/>
+        </scene>
         <!--Setting View Controller-->
         <scene sceneID="caH-Wc-Lap">
             <objects>
@@ -330,15 +465,27 @@
         </scene>
     </scenes>
     <resources>
+        <image name="01-bigfeather.png" width="292" height="212"/>
+        <image name="01-btfeather.png" width="156" height="114"/>
+        <image name="01-feet01.png" width="264" height="397"/>
+        <image name="bbg1.jpeg" width="214" height="1136"/>
+        <image name="bbt.png" width="214" height="208"/>
         <image name="bt_back.png" width="130" height="128"/>
         <image name="bt_green.png" width="468" height="119"/>
+        <image name="ing_word.png" width="544" height="92"/>
+        <image name="rbg1.jpeg" width="214" height="1136"/>
+        <image name="rbt.png" width="214" height="208"/>
+        <image name="ready.png" width="616" height="209"/>
         <image name="ready_btplay.png" width="124" height="115"/>
         <image name="ready_intro.png" width="618" height="706"/>
         <image name="ready_play.png" width="238" height="75"/>
         <image name="ready_score.png" width="614" height="180"/>
         <image name="ready_score_arrow.png" width="78" height="221"/>
         <image name="select_image01.png" width="253" height="206"/>
+        <image name="select_shadow.png" width="132" height="25"/>
         <image name="select_stage_normal.png" width="299" height="254"/>
+        <image name="ybg1.jpeg" width="215" height="1136"/>
+        <image name="ybt.png" width="214" height="208"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

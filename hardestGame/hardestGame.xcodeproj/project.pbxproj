@@ -160,6 +160,11 @@
 		DD5DA58E1992043700227BF5 /* ReadyScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA58D1992043700227BF5 /* ReadyScoreView.m */; };
 		DD5DA59019920F7500227BF5 /* stages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD5DA58F19920F7500227BF5 /* stages.plist */; };
 		DD5DA59319921E4E00227BF5 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA59219921E4E00227BF5 /* NSString+path.m */; };
+		DD6220B1199278BE00CB4B53 /* Stage01Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6220B0199278BE00CB4B53 /* Stage01Controller.m */; };
+		DD6220B519928CD000CB4B53 /* FeetView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6220B419928CD000CB4B53 /* FeetView.m */; };
+		DD6220B819928CE100CB4B53 /* FeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6220B719928CE100CB4B53 /* FeatherView.m */; };
+		DD6220BB19928D2C00CB4B53 /* ReadyGoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6220BA19928D2C00CB4B53 /* ReadyGoView.m */; };
+		DD6220BE19928D3D00CB4B53 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6220BD19928D3D00CB4B53 /* ScoreBoardView.m */; };
 		DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D0E1990052600C3ED45 /* PlayViewController.m */; };
 		DD762D121990057300C3ED45 /* StageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D111990057300C3ED45 /* StageListView.m */; };
 		DD762D15199005D000C3ED45 /* StageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D14199005D000C3ED45 /* StageView.m */; };
@@ -349,6 +354,16 @@
 		DD5DA58F19920F7500227BF5 /* stages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stages.plist; sourceTree = "<group>"; };
 		DD5DA59119921E4E00227BF5 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
 		DD5DA59219921E4E00227BF5 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
+		DD6220AF199278BE00CB4B53 /* Stage01Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage01Controller.h; sourceTree = "<group>"; };
+		DD6220B0199278BE00CB4B53 /* Stage01Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stage01Controller.m; sourceTree = "<group>"; };
+		DD6220B319928CD000CB4B53 /* FeetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeetView.h; sourceTree = "<group>"; };
+		DD6220B419928CD000CB4B53 /* FeetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeetView.m; sourceTree = "<group>"; };
+		DD6220B619928CE100CB4B53 /* FeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatherView.h; sourceTree = "<group>"; };
+		DD6220B719928CE100CB4B53 /* FeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatherView.m; sourceTree = "<group>"; };
+		DD6220B919928D2C00CB4B53 /* ReadyGoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyGoView.h; sourceTree = "<group>"; };
+		DD6220BA19928D2C00CB4B53 /* ReadyGoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadyGoView.m; sourceTree = "<group>"; };
+		DD6220BC19928D3D00CB4B53 /* ScoreBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoardView.h; sourceTree = "<group>"; };
+		DD6220BD19928D3D00CB4B53 /* ScoreBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoardView.m; sourceTree = "<group>"; };
 		DD762D0D1990052600C3ED45 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		DD762D0E1990052600C3ED45 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		DD762D101990057300C3ED45 /* StageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageListView.h; sourceTree = "<group>"; };
@@ -441,10 +456,10 @@
 				DDCDCF5B198F2F9B00A7C5F7 /* tools */,
 				DD8F9781198E930600D4F80D /* Category */,
 				DD8F977D198E8E2300D4F80D /* View */,
-				DD0B661D198E7E0D0020CC9F /* resources */,
 				DD0B6619198E70280020CC9F /* Controller */,
 				DD0B672D198E7FA10020CC9F /* Images.xcassets */,
 				DD0B65F0198E6B2F0020CC9F /* Main.storyboard */,
+				DD0B661D198E7E0D0020CC9F /* resources */,
 				DD0B6613198E6E2D0020CC9F /* Other */,
 				DD0B65E5198E6B2F0020CC9F /* Supporting Files */,
 			);
@@ -502,6 +517,8 @@
 				DD762D0E1990052600C3ED45 /* PlayViewController.m */,
 				DDCFCC821991D2EA00003BFE /* ReadyViewController.h */,
 				DDCFCC831991D2EA00003BFE /* ReadyViewController.m */,
+				DD6220AF199278BE00CB4B53 /* Stage01Controller.h */,
+				DD6220B0199278BE00CB4B53 /* Stage01Controller.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -760,9 +777,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DD6220B219928CB100CB4B53 /* Stage01 */ = {
+			isa = PBXGroup;
+			children = (
+				DD6220B319928CD000CB4B53 /* FeetView.h */,
+				DD6220B419928CD000CB4B53 /* FeetView.m */,
+				DD6220B619928CE100CB4B53 /* FeatherView.h */,
+				DD6220B719928CE100CB4B53 /* FeatherView.m */,
+				DD6220B919928D2C00CB4B53 /* ReadyGoView.h */,
+				DD6220BA19928D2C00CB4B53 /* ReadyGoView.m */,
+				DD6220BC19928D3D00CB4B53 /* ScoreBoardView.h */,
+				DD6220BD19928D3D00CB4B53 /* ScoreBoardView.m */,
+			);
+			path = Stage01;
+			sourceTree = "<group>";
+		};
 		DD8F977D198E8E2300D4F80D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD6220B219928CB100CB4B53 /* Stage01 */,
 				DD8F977E198E8E3F00D4F80D /* FullBgView.h */,
 				DD8F977F198E8E3F00D4F80D /* FullBgView.m */,
 				DD762D101990057300C3ED45 /* StageListView.h */,
@@ -1034,6 +1067,7 @@
 			files = (
 				DDCDCF5A198F290400A7C5F7 /* CancelAnimationNavViewController.m in Sources */,
 				DD762D121990057300C3ED45 /* StageListView.m in Sources */,
+				DD6220BB19928D2C00CB4B53 /* ReadyGoView.m in Sources */,
 				DD0B6618198E6E2D0020CC9F /* main.m in Sources */,
 				DD762D15199005D000C3ED45 /* StageView.m in Sources */,
 				DD5DA59319921E4E00227BF5 /* NSString+path.m in Sources */,
@@ -1046,7 +1080,11 @@
 				DDCFCC841991D2EA00003BFE /* ReadyViewController.m in Sources */,
 				DD5C7E181990C90E002E89FE /* StageRecordTool.m in Sources */,
 				DD5C7E151990C6A5002E89FE /* StageRecord.m in Sources */,
+				DD6220B1199278BE00CB4B53 /* Stage01Controller.m in Sources */,
+				DD6220B819928CE100CB4B53 /* FeatherView.m in Sources */,
 				DD0B6617198E6E2D0020CC9F /* AppDelegate.m in Sources */,
+				DD6220BE19928D3D00CB4B53 /* ScoreBoardView.m in Sources */,
+				DD6220B519928CD000CB4B53 /* FeetView.m in Sources */,
 				DDCFCC871991E90B00003BFE /* ReadyTitleView.m in Sources */,
 				DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */,
 				DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */,

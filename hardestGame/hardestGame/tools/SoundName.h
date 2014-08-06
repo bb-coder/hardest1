@@ -14,3 +14,4 @@
 #define kSoundNewPopFileName @"new_pop.mp3"
 #define kSoundReady @"stage_ready.mp3"
 #define kSoundDropTitle(n) [NSString stringWithFormat:@"drop_title_%d.mp3",n]
+#define kSoundReadyGo @"ready_go.mp3"
