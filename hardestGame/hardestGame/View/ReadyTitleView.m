@@ -14,9 +14,8 @@
 
 - (void)awakeFromNib
 {
-    [self setFullScreenBgImageWithName:@"select_bg.jpg"];
-    
-    
+    self.frame = [[UIScreen mainScreen] bounds];
+   [self setFullScreenBgImageWithName:@"select_bg.jpg"];
 }
 
 - (void) startAnimation:(NSTimer *) timer

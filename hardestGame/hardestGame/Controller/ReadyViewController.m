@@ -7,6 +7,7 @@
 //
 
 #import "ReadyViewController.h"
+#import "SoundTool.h"
 @implementation ReadyViewController
 
 -(void)viewDidLoad
@@ -22,6 +23,7 @@
 }
 
 - (IBAction)backClick:(id)sender {
+    [[SoundTool shareSoundTool]playBtnSoundWithFileName:kSoundClickButtonFileName];
     [self.navigationController popViewControllerAnimated:NO];
 }
 
