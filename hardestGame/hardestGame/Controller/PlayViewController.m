@@ -9,6 +9,7 @@
 #import "PlayViewController.h"
 #import "StageListView.h"
 #import "SoundTool.h"
+#import "ReadyViewController.h"
 @interface PlayViewController ()
 {
     
@@ -24,9 +25,20 @@
     [self.view setFullScreenBgImageWithName:@"select_bg.jpg"];
     StageListView * _listView = [[StageListView alloc]initWithFrame:self.view.bounds];
     _listView.delegate = self;
+    _listView.itemClickBlock = ^(StageInfo * info){
+        [self performSegueWithIdentifier:@"ready" sender:info];
+    };
     [self.view insertSubview:_listView atIndex:0];
-   
+    
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ReadyViewController * rc = segue.destinationViewController;
+    rc.info = sender;
+}
+
+
 - (IBAction)backClick {
     [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
     [self.navigationController popViewControllerAnimated:NO];

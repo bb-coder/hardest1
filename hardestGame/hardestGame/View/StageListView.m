@@ -8,7 +8,6 @@
 
 #import "StageListView.h"
 #import "FullBgView.h"
-#import "StageInfo.h"
 #import "StageView.h"
 #import "StageRecordTool.h"
 @implementation StageListView
@@ -80,6 +79,9 @@
         StageView * stageView = views[0];
         stageView.info = info;
         
+        [stageView addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(itemClick:)]];
+        
+        
         
         CGFloat startX = (viewSize.width - 2 * stageViewWdith - marginX) * 0.5 + (i/6) * viewSize.width;
         
@@ -96,6 +98,14 @@
         [stageView sendSubviewToBack:self];
         
     }
+}
+
+#pragma mark 监听关卡点击
+- (void) itemClick:(UIGestureRecognizer *) tap
+{
+    StageView * stageView = (StageView *)tap.view;
+    if(_itemClickBlock)
+    _itemClickBlock(stageView.info);
 }
 
 #pragma mark 添加背景图片根据图片名

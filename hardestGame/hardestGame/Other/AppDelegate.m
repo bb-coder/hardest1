@@ -15,37 +15,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //模拟数据
-    {
-        StageRecord * r1 = [[StageRecord alloc]init];
-        r1.stageId = 1;
-        r1.rank = @"s";
-        r1.unlocked = YES;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r1];
-        StageRecord * r2 = [[StageRecord alloc]init];
-        r2.stageId = 2;
-        r2.rank = @"s";
-        r2.unlocked = YES;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r2];
-        StageRecord * r3 = [[StageRecord alloc]init];
-        r3.stageId = 3;
-        r3.rank = @"s";
-        r3.unlocked = YES;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r3];
-        StageRecord * r4 = [[StageRecord alloc]init];
-        r4.stageId = 4;
-        r4.rank = @"s";
-        r4.unlocked = YES;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r4];
-        StageRecord * r5 = [[StageRecord alloc]init];
-        r5.stageId = 5;
-        r5.rank = @"c";
-        r5.unlocked = YES;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r5];
-        StageRecord * r6 = [[StageRecord alloc]init];
-        r6.stageId = 6;
-        [[StageRecordTool shareStageRecordTool] saveStageRecordWithStagerecord:r6];
-    }
+    // 测试代码
+    StageRecord *m1 = [[StageRecord alloc] init];
+    m1.stageId = 1;
+    m1.score = 26;
+    m1.rank = @"s";
+    m1.unlocked = YES;
+    
+    StageRecord *m2 = [[StageRecord alloc] init];
+    m2.stageId = 2;
+    m2.score = 9.2;
+    m2.rank = @"s";
+    m2.unlocked = YES;
+    
+    StageRecord *m3 = [[StageRecord alloc] init];
+    m3.stageId = 3;
+    m3.score = 1120;
+    m3.rank = @"c";
+    m3.unlocked = YES;
+    
+    StageRecord *m4 = [[StageRecord alloc] init];
+    m4.stageId = 4;
+    m4.score = 205;
+    m4.rank = @"s";
+    m4.unlocked = YES;
+    
+    StageRecord *m5 = [[StageRecord alloc] init];
+    m5.stageId = 5;
+    m5.score = 27;
+    m5.rank = @"a";
+    m5.unlocked = YES;
+    
+    StageRecord *m6 = [[StageRecord alloc] init];
+    m6.stageId = 6;
+    //m6.unlocked = YES;
+    
+    [[StageRecordTool shareStageRecordTool] saveStageRecords:@[m1, m2, m3, m4, m5, m6]];
     
     // Override point for customization after application launch.
     return YES;

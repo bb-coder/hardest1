@@ -38,7 +38,6 @@ singletonImplementation(SoundTool)
     _player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
     
     [_player prepareToPlay];
-    
     _player.numberOfLoops = -1;
 }
 
@@ -88,9 +87,6 @@ singletonImplementation(SoundTool)
 #pragma mark 设置音效静音
 -(void)setSoundSilent:(BOOL)isSoundSilent
 {
-    if (isSoundSilent) {
-    
-    }
     _isSoundSilent = isSoundSilent;
 }
 @end

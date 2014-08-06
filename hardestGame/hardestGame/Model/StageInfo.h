@@ -12,10 +12,11 @@
 @property (nonatomic,copy) NSString * icon;
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * intro;
-@property (nonatomic,copy) NSString * max;
-@property (nonatomic,copy) NSString * min;
+@property (nonatomic,assign) double  max;
+@property (nonatomic,assign) double  min;
 @property (nonatomic,assign) NSInteger stageId;
 @property (nonatomic,strong) StageRecord * stageRecord;
-
+@property (nonatomic,copy) NSString * uint;
+@property (nonatomic,copy) NSString * format;
 + (instancetype) setStageInfoWithDict:(NSDictionary *) dict;
 @end

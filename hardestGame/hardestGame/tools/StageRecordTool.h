@@ -17,6 +17,6 @@ singletonInterface(StageRecordTool)
 
 //存档
 - (void) saveStageRecordWithStagerecord:(StageRecord *) stageRecord;
-
+- (void)saveStageRecords:(NSArray *)records;
 
 @end

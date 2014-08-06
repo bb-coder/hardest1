@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "StageInfo.h"
 @interface StageListView : UIScrollView
-
+@property (nonatomic,copy) void (^itemClickBlock)(StageInfo * info);
 
 @end

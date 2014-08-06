@@ -17,9 +17,10 @@
     stage.icon = dict[@"icon"];
     stage.title = dict[@"title"];
     stage.intro = dict[@"intro"];
-    stage.max = dict[@"max"];
-    stage.min = dict[@"min"];
-    
+    stage.max = [dict[@"max"] doubleValue];
+    stage.min = [dict[@"min"] doubleValue];
+    stage.format = dict[@"format"];
+    stage.uint = dict[@"unit"];
     return  stage;
 }
 

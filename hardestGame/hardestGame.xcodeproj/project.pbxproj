@@ -148,7 +148,6 @@
 		DD0B6729198E7E0D0020CC9F /* bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */; };
 		DD0B672A198E7E0D0020CC9F /* sounds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A8198E7E0D0020CC9F /* sounds.bundle */; };
 		DD0B672B198E7E0D0020CC9F /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66AA198E7E0D0020CC9F /* home.plist */; };
-		DD0B672C198E7E0D0020CC9F /* stages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66AB198E7E0D0020CC9F /* stages.plist */; };
 		DD0B672E198E7FA10020CC9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B672D198E7FA10020CC9F /* Images.xcassets */; };
 		DD5C7E101990889A002E89FE /* StageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C7E0F1990889A002E89FE /* StageInfo.m */; };
 		DD5C7E121990B4EE002E89FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C7E111990B4EE002E89FE /* QuartzCore.framework */; };
@@ -158,6 +157,9 @@
 		DD5C7E5519913EA3002E89FE /* select_stage_s02.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5219913EA3002E89FE /* select_stage_s02.png */; };
 		DD5C7E5619913EA3002E89FE /* select_stage_s03.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5319913EA3002E89FE /* select_stage_s03.png */; };
 		DD5C7E5819914736002E89FE /* StageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5C7E5719914736002E89FE /* StageView.xib */; };
+		DD5DA58E1992043700227BF5 /* ReadyScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA58D1992043700227BF5 /* ReadyScoreView.m */; };
+		DD5DA59019920F7500227BF5 /* stages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD5DA58F19920F7500227BF5 /* stages.plist */; };
+		DD5DA59319921E4E00227BF5 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA59219921E4E00227BF5 /* NSString+path.m */; };
 		DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D0E1990052600C3ED45 /* PlayViewController.m */; };
 		DD762D121990057300C3ED45 /* StageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D111990057300C3ED45 /* StageListView.m */; };
 		DD762D15199005D000C3ED45 /* StageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D14199005D000C3ED45 /* StageView.m */; };
@@ -168,6 +170,8 @@
 		DDCDCF5E198F2FAD00A7C5F7 /* SoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF5D198F2FAD00A7C5F7 /* SoundTool.m */; };
 		DDCDCF60198F305900A7C5F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCDCF5F198F305900A7C5F7 /* AVFoundation.framework */; };
 		DDCDCF62198F307600A7C5F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCDCF61198F307600A7C5F7 /* AudioToolbox.framework */; };
+		DDCFCC841991D2EA00003BFE /* ReadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCFCC831991D2EA00003BFE /* ReadyViewController.m */; };
+		DDCFCC871991E90B00003BFE /* ReadyTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCFCC861991E90B00003BFE /* ReadyTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,7 +331,6 @@
 		DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_music.mp3; sourceTree = "<group>"; };
 		DD0B66A8198E7E0D0020CC9F /* sounds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sounds.bundle; sourceTree = "<group>"; };
 		DD0B66AA198E7E0D0020CC9F /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
-		DD0B66AB198E7E0D0020CC9F /* stages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stages.plist; sourceTree = "<group>"; };
 		DD0B672D198E7FA10020CC9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD5C7E0E1990889A002E89FE /* StageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageInfo.h; sourceTree = "<group>"; };
 		DD5C7E0F1990889A002E89FE /* StageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageInfo.m; sourceTree = "<group>"; };
@@ -341,6 +344,11 @@
 		DD5C7E5219913EA3002E89FE /* select_stage_s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s02.png; sourceTree = "<group>"; };
 		DD5C7E5319913EA3002E89FE /* select_stage_s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s03.png; sourceTree = "<group>"; };
 		DD5C7E5719914736002E89FE /* StageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StageView.xib; sourceTree = "<group>"; };
+		DD5DA58C1992043700227BF5 /* ReadyScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyScoreView.h; sourceTree = "<group>"; };
+		DD5DA58D1992043700227BF5 /* ReadyScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadyScoreView.m; sourceTree = "<group>"; };
+		DD5DA58F19920F7500227BF5 /* stages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stages.plist; sourceTree = "<group>"; };
+		DD5DA59119921E4E00227BF5 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		DD5DA59219921E4E00227BF5 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 		DD762D0D1990052600C3ED45 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		DD762D0E1990052600C3ED45 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		DD762D101990057300C3ED45 /* StageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageListView.h; sourceTree = "<group>"; };
@@ -360,6 +368,10 @@
 		DDCDCF5F198F305900A7C5F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DDCDCF61198F307600A7C5F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DDCDCF64198F4E3300A7C5F7 /* SoundName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundName.h; sourceTree = "<group>"; };
+		DDCFCC821991D2EA00003BFE /* ReadyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyViewController.h; sourceTree = "<group>"; };
+		DDCFCC831991D2EA00003BFE /* ReadyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadyViewController.m; sourceTree = "<group>"; };
+		DDCFCC851991E90B00003BFE /* ReadyTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyTitleView.h; sourceTree = "<group>"; };
+		DDCFCC861991E90B00003BFE /* ReadyTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadyTitleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +500,8 @@
 				DDCDCF59198F290400A7C5F7 /* CancelAnimationNavViewController.m */,
 				DD762D0D1990052600C3ED45 /* PlayViewController.h */,
 				DD762D0E1990052600C3ED45 /* PlayViewController.m */,
+				DDCFCC821991D2EA00003BFE /* ReadyViewController.h */,
+				DDCFCC831991D2EA00003BFE /* ReadyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -729,8 +743,8 @@
 		DD0B66A9198E7E0D0020CC9F /* plists */ = {
 			isa = PBXGroup;
 			children = (
+				DD5DA58F19920F7500227BF5 /* stages.plist */,
 				DD0B66AA198E7E0D0020CC9F /* home.plist */,
-				DD0B66AB198E7E0D0020CC9F /* stages.plist */,
 			);
 			path = plists;
 			sourceTree = "<group>";
@@ -756,6 +770,10 @@
 				DD762D13199005D000C3ED45 /* StageView.h */,
 				DD762D14199005D000C3ED45 /* StageView.m */,
 				DD5C7E5719914736002E89FE /* StageView.xib */,
+				DDCFCC851991E90B00003BFE /* ReadyTitleView.h */,
+				DDCFCC861991E90B00003BFE /* ReadyTitleView.m */,
+				DD5DA58C1992043700227BF5 /* ReadyScoreView.h */,
+				DD5DA58D1992043700227BF5 /* ReadyScoreView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -765,6 +783,8 @@
 			children = (
 				DD8F9782198E931D00D4F80D /* UIView+Image.h */,
 				DD8F9783198E931D00D4F80D /* UIView+Image.m */,
+				DD5DA59119921E4E00227BF5 /* NSString+path.h */,
+				DD5DA59219921E4E00227BF5 /* NSString+path.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -921,13 +941,13 @@
 				DD0B66D4198E7E0D0020CC9F /* ybg2.jpeg in Resources */,
 				DD0B66EB198E7E0D0020CC9F /* score_border.png in Resources */,
 				DD0B66C6198E7E0D0020CC9F /* Icon-Small-50@2x.png in Resources */,
-				DD0B672C198E7E0D0020CC9F /* stages.plist in Resources */,
 				DD0B66D0198E7E0D0020CC9F /* rbg1.jpeg in Resources */,
 				DD0B66D8198E7E0D0020CC9F /* ready_loading.png in Resources */,
 				DD0B6711198E7E0D0020CC9F /* select_image18.png in Resources */,
 				DD0B670A198E7E0D0020CC9F /* select_image11.png in Resources */,
 				DD0B66C3198E7E0D0020CC9F /* Icon-72.png in Resources */,
 				DD0B6707198E7E0D0020CC9F /* select_image08.png in Resources */,
+				DD5DA59019920F7500227BF5 /* stages.plist in Resources */,
 				DD0B6718198E7E0D0020CC9F /* select_insane_bg.jpg in Resources */,
 				DD0B66F5198E7E0D0020CC9F /* 01-feet02.png in Resources */,
 				DD0B66E3198E7E0D0020CC9F /* scene_bg.png in Resources */,
@@ -1016,14 +1036,18 @@
 				DD762D121990057300C3ED45 /* StageListView.m in Sources */,
 				DD0B6618198E6E2D0020CC9F /* main.m in Sources */,
 				DD762D15199005D000C3ED45 /* StageView.m in Sources */,
+				DD5DA59319921E4E00227BF5 /* NSString+path.m in Sources */,
 				DD0B661C198E704F0020CC9F /* GameViewController.m in Sources */,
 				DD8F9780198E8E3F00D4F80D /* FullBgView.m in Sources */,
+				DD5DA58E1992043700227BF5 /* ReadyScoreView.m in Sources */,
 				DD5C7E101990889A002E89FE /* StageInfo.m in Sources */,
 				DD8F9784198E931D00D4F80D /* UIView+Image.m in Sources */,
 				DDCDCF5E198F2FAD00A7C5F7 /* SoundTool.m in Sources */,
+				DDCFCC841991D2EA00003BFE /* ReadyViewController.m in Sources */,
 				DD5C7E181990C90E002E89FE /* StageRecordTool.m in Sources */,
 				DD5C7E151990C6A5002E89FE /* StageRecord.m in Sources */,
 				DD0B6617198E6E2D0020CC9F /* AppDelegate.m in Sources */,
+				DDCFCC871991E90B00003BFE /* ReadyTitleView.m in Sources */,
 				DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */,
 				DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */,
 			);
