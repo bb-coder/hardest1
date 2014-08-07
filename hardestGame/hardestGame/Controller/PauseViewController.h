@@ -11,6 +11,10 @@
 @interface PauseViewController : UIViewController
 - (IBAction)resume;
 - (IBAction)back;
+@property (weak, nonatomic) IBOutlet UIImageView *pageImageView;
+- (IBAction)left:(id)sender;
+- (IBAction)right:(id)sender;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *pageDot;
 
 @property (nonatomic,copy) void(^reusem)();
 @end
