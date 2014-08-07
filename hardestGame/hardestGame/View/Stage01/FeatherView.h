@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FeatherView : UIImageView
-- (void) start:(int) index;
+- (void) start;
+- (void) setFeather:(int) index;
 @end

@@ -110,7 +110,7 @@
                                 </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oof-eh-mRJ">
-                                <rect key="frame" x="100" y="10" width="50" height="46"/>
+                                <rect key="frame" x="205" y="10" width="50" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="ready_btplay.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ready_play.png" id="Ho2-l1-Jan">
-                                <rect key="frame" x="150" y="10" width="143" height="45"/>
+                                <rect key="frame" x="65" y="10" width="143" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ready_intro.png" id="2YZ-oa-HgZ">
@@ -381,7 +381,30 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="scoreLabel" destination="0Bf-nY-dDQ" id="n8j-eC-fQH"/>
+                                </connections>
                             </view>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GIG-Yi-qvI">
+                                <rect key="frame" x="261" y="56" width="114" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ing_retry.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retry" destination="aWB-34-SQt" eventType="touchUpInside" id="9mY-4v-d2Y"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TuU-F6-RMy">
+                                <rect key="frame" x="261" y="103" width="114" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ing_pause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause" destination="aWB-34-SQt" eventType="touchUpInside" id="a18-NJ-oK6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -397,11 +420,64 @@
                         <outlet property="readyGoView" destination="t6d-za-oBk" id="Lz1-iL-Ztp"/>
                         <outlet property="scoreBoardView" destination="MSJ-de-18M" id="X1b-r4-3mJ"/>
                         <outlet property="scoreLabel" destination="LRT-g8-X5D" id="iOV-Bz-3q9"/>
+                        <segue destination="K4l-Og-SgE" kind="push" identifier="pause" id="JYA-7t-cNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fH-HJ-SwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1425" y="-5"/>
+        </scene>
+        <!--Pause View Controller-->
+        <scene sceneID="RJj-jZ-kJg">
+            <objects>
+                <viewController id="K4l-Og-SgE" customClass="PauseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFn-6f-ISo" customClass="FullBgView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hqV-sW-g3J">
+                                <rect key="frame" x="250" y="358" width="60" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_resume.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resume" destination="K4l-Og-SgE" eventType="touchUpInside" id="krD-ay-YEy"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vj4-3C-ynF">
+                                <rect key="frame" x="20" y="358" width="60" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_home.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="K4l-Og-SgE" eventType="touchUpInside" id="Yqk-v0-Q3b"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dK9-1r-YRv">
+                                <rect key="frame" x="135" y="358" width="60" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_setting.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VBI-uu-YAV" kind="push" identifier="pauseToSet" id="bEt-RE-Oap"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kk4-LJ-dbg"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sl3-1R-yBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-5"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="caH-Wc-Lap">
@@ -472,6 +548,11 @@
         <image name="bbt.png" width="214" height="208"/>
         <image name="bt_back.png" width="130" height="128"/>
         <image name="bt_green.png" width="468" height="119"/>
+        <image name="bt_home.png" width="137" height="168"/>
+        <image name="bt_resume.png" width="136" height="168"/>
+        <image name="bt_setting.png" width="136" height="170"/>
+        <image name="ing_pause.png" width="218" height="103"/>
+        <image name="ing_retry.png" width="215" height="94"/>
         <image name="ing_word.png" width="544" height="92"/>
         <image name="rbg1.jpeg" width="214" height="1136"/>
         <image name="rbt.png" width="214" height="208"/>
@@ -492,4 +573,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="bEt-RE-Oap"/>
+    </inferredMetricsTieBreakers>
 </document>

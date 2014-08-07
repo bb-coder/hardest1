@@ -7,7 +7,6 @@
 //
 
 #import "StageInfo.h"
-#import "StageRecord.h"
 @implementation StageInfo
 
 + (instancetype) setStageInfoWithDict:(NSDictionary *) dict

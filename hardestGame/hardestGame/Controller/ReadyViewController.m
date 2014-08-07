@@ -8,6 +8,7 @@
 
 #import "ReadyViewController.h"
 #import "SoundTool.h"
+#import "Stage01Controller.h"
 @implementation ReadyViewController
 
 -(void)viewDidLoad
@@ -27,5 +28,10 @@
     [self.navigationController popViewControllerAnimated:NO];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    Stage01Controller * vc =  segue.destinationViewController;
+    vc.info = _info;
+}
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class  StageRecord;
+#import "StageRecord.h"
 @interface StageInfo : NSObject
 @property (nonatomic,copy) NSString * icon;
 @property (nonatomic,copy) NSString * title;

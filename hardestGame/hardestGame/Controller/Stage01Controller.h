@@ -11,12 +11,17 @@
 #import "FeatherView.h"
 #import "ScoreBoardView.h"
 #import "ReadyGoView.h"
+#import "StageInfo.h"
 @interface Stage01Controller : UIViewController
 @property (weak, nonatomic) IBOutlet FeetView *feetView;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet FeatherView *featherView;
 @property (weak, nonatomic) IBOutlet ReadyGoView *readyGoView;
-- (IBAction)featherClick:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet ScoreBoardView *scoreBoardView;
+@property (nonatomic,strong) StageInfo * info;
+- (IBAction)featherClick:(UIButton *)sender;
+- (IBAction)retry;
+- (IBAction)pause;
+
 
 @end

@@ -18,8 +18,8 @@
     // 测试代码
     StageRecord *m1 = [[StageRecord alloc] init];
     m1.stageId = 1;
-    m1.score = 26;
-    m1.rank = @"s";
+    m1.score = 2;
+    m1.rank = @"f";
     m1.unlocked = YES;
     
     StageRecord *m2 = [[StageRecord alloc] init];
@@ -73,7 +73,9 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
+    NSNotification * note = [NSNotification notificationWithName:@"applicationWillEnterForeground" object:self];
+    [center postNotification:note];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

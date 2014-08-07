@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "StageInfo.h"
 @interface ScoreBoardView : UIView
+@property (nonatomic,weak) IBOutlet UILabel * scoreLabel;
 - (void) start;
+- (void) setScore:(double) score andStageInfo:(StageInfo *) info;
 @end

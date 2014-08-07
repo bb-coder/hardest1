@@ -22,6 +22,7 @@
             self.transform = CGAffineTransformMakeTranslation(-320, 0);
         } completion:^(BOOL finished) {
             self.hidden = YES;
+            self.image = [UIImage imageNamed:@"ready.png"];
             completion();
         }];
     }];
