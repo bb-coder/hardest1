@@ -57,7 +57,6 @@
 //监听点击手势
 - (void) removeGuide:(UITapGestureRecognizer *)tap
 {
-    NSLog(@"erer");
     [tap.view removeFromSuperview];
     self.view.userInteractionEnabled = NO;
     [self startGame];
@@ -139,11 +138,13 @@
 }
 
 - (IBAction)retry {
+        [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
     [self theEnd];
     [self startGame];
 }
 
 - (IBAction)pause {
+    [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
     _timer.paused = YES;
     [self performSegueWithIdentifier:@"pause" sender:nil];
     

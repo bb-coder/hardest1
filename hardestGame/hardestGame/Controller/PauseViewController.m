@@ -50,11 +50,11 @@
     for (int i = 0; i < 4; i++) {
         UIImageView * imageView =_pageDot[i];
         if (imageView.tag + 1 == _currentPageIndex) {
-            imageView.image = [UIImage imageNamed:@"pagedot01.png"];
+            imageView.image = [UIImage imageNamed:@"pagedot02.png"];
         }
         else
         {
-            imageView.image = [UIImage imageNamed:@"pagedot02.png"];
+            imageView.image = [UIImage imageNamed:@"pagedot01.png"];
         }
     }
     

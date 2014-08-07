@@ -30,6 +30,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    [[SoundTool shareSoundTool] playBtnSoundWithFileName:kSoundClickButtonFileName];
     Stage01Controller * vc =  segue.destinationViewController;
     vc.info = _info;
 }
