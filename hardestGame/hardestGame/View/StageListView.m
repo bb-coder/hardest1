@@ -93,7 +93,7 @@
         frame.origin.x = x;
         frame.origin.y = y;
         stageView.frame = frame;
-
+        stageView.tag = i + 1;
         [self addSubview:stageView];
         [stageView sendSubviewToBack:self];
         
@@ -118,7 +118,37 @@
     [bgView setFullScreenBgImageWithName:Name];
     [self addSubview:bgView];
 }
+-(void)reloadDataAtNo:(int)stageID
+{
+    // 1.刷新当前关卡
+    StageView *stage1 = (StageView *)[self viewWithTag:stageID];
+    StageInfo *info1 = stage1.info;
+    info1.stageRecord = [[StageRecordTool shareStageRecordTool] stageRecordWithId:stageID];
+    stage1.info = info1;
+    
+    // 2.刷新下一关
+    StageView *stage2 = (StageView *)[self viewWithTag:stageID + 1];
+    if (stage2 == nil) return;
+    
+    StageInfo *info2 = stage2.info;
+    info2.stageRecord = [[StageRecordTool shareStageRecordTool] stageRecordWithId:stageID + 1];
+    stage2.info = info2;
+;
+    
+    // 3.翻到下一页: 当前关卡通过 && 下一关从未玩过 && 下一关在下一页
+    BOOL pass = ![info1.stageRecord.rank isEqualToString:@"f"];
+    BOOL never = info2.stageRecord.rank == nil;
+    BOOL nextPage = (stageID % 6) == 0;
+    if (pass && never && nextPage) {
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.4];
+        CGPoint offset = self.contentOffset;
+        offset.x = (stageID / 6) * self.frame.size.width;
+        self.contentOffset = offset;
+        [UIView commitAnimations];
+    }
 
+}
 
 
 @end

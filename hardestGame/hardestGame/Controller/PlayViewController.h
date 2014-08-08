@@ -11,5 +11,5 @@
 @interface PlayViewController : UIViewController<UIScrollViewDelegate>
 - (IBAction)backClick;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControler;
-
+- (void) reloadDataAtNo:(int) stageID;
 @end

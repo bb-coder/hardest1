@@ -29,6 +29,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(willEnterForeground) name:@"applicationWillEnterForeground" object:nil];
     [self.view setUserInteractionEnabled:NO];
     [self guideDisplay];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startGame) name:@"restartGame" object:nil];
 }
 
 - (void) willEnterForeground

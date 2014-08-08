@@ -105,7 +105,7 @@
     CGPoint center = _scoreHint.center;
     //center.x -= 0.5 * (index + 1);
     center.x -= 3;
-    
+    void (^showResult)();
     // x值越界
     if (center.x < _endX) {
         center.x = _endX;
@@ -113,10 +113,13 @@
         [timer invalidate];
         
         // 显示结果
+        showResult = ^(){
+        
         if (_showResult) {
             unichar c = [@"sabcdef" characterAtIndex:index];
             _showResult([NSString stringWithFormat:@"%c", c]);
         }
+        };
     }
     
     // 点亮积分卡
@@ -144,6 +147,9 @@
     
     // 设置指示器的中点位置
     _scoreHint.center = center;
+    if (showResult) {
+        showResult();
+    }
 }
 
 @end

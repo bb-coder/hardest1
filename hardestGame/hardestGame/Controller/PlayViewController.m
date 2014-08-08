@@ -12,7 +12,7 @@
 #import "ReadyViewController.h"
 @interface PlayViewController ()
 {
-    
+    StageListView * _listView;
 }
 @end
 
@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setFullScreenBgImageWithName:@"select_bg.jpg"];
-    StageListView * _listView = [[StageListView alloc]initWithFrame:self.view.bounds];
+    _listView = [[StageListView alloc]initWithFrame:self.view.bounds];
     _listView.delegate = self;
     _listView.itemClickBlock = ^(StageInfo * info){
         [self performSegueWithIdentifier:@"ready" sender:info];
@@ -47,5 +47,9 @@
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     self.pageControler.currentPage = scrollView.contentOffset.x / self.view.frame.size.width;
+}
+-(void)reloadDataAtNo:(int)stageID
+{
+    [_listView reloadDataAtNo:stageID];
 }
 @end

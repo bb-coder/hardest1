@@ -10,5 +10,5 @@
 #import "StageInfo.h"
 @interface StageListView : UIScrollView
 @property (nonatomic,copy) void (^itemClickBlock)(StageInfo * info);
-
+- (void) reloadDataAtNo:(int) stageID;
 @end

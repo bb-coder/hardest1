@@ -10,6 +10,8 @@
 #import "StageInfo.h"
 @class CountScoreView;
 @interface CountScoreViewController : UIViewController
+- (IBAction)retry;
+- (IBAction)backList;
 
 @property (weak, nonatomic) IBOutlet CountScoreView *coutScoreView;
 @property (nonatomic,assign) double scoreNew;

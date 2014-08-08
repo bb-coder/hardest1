@@ -184,7 +184,6 @@
 		DDCD45F01994891800428341 /* CountScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45EF1994891800428341 /* CountScoreViewController.m */; };
 		DDCD45F319948EA700428341 /* CountScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45F219948EA700428341 /* CountScoreView.m */; };
 		DDCD45F71994A37E00428341 /* guide11.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6631198E7E0D0020CC9F /* guide11.png */; };
-		DDCD45F91994A6BF00428341 /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDCD45F81994A6BF00428341 /* sound.bundle */; };
 		DDCD45FC1994B14100428341 /* FailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45FB1994B14100428341 /* FailView.m */; };
 		DDCD45FE1994B15500428341 /* FailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCD45FD1994B15500428341 /* FailView.xib */; };
 		DDCD46081994B38400428341 /* fail_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46001994B38400428341 /* fail_bg.jpg */; };
@@ -195,6 +194,9 @@
 		DDCD460D1994B38400428341 /* fail_retry.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46051994B38400428341 /* fail_retry.png */; };
 		DDCD460E1994B38400428341 /* fail_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46061994B38400428341 /* fail_shadow.png */; };
 		DDCD460F1994B38400428341 /* fail_word.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46071994B38400428341 /* fail_word.png */; };
+		DDCD46121994CE0300428341 /* RecordNewView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD46111994CE0300428341 /* RecordNewView.m */; };
+		DDCD46141994CE5300428341 /* RecordNewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46131994CE5300428341 /* RecordNewView.xib */; };
+		DDCD46161994D5AC00428341 /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46151994D5AC00428341 /* sound.bundle */; };
 		DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF54198F272500A7C5F7 /* SettingViewController.m */; };
 		DDCDCF5A198F290400A7C5F7 /* CancelAnimationNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF59198F290400A7C5F7 /* CancelAnimationNavViewController.m */; };
 		DDCDCF5E198F2FAD00A7C5F7 /* SoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF5D198F2FAD00A7C5F7 /* SoundTool.m */; };
@@ -416,7 +418,6 @@
 		DDCD45EF1994891800428341 /* CountScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountScoreViewController.m; sourceTree = "<group>"; };
 		DDCD45F119948EA700428341 /* CountScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountScoreView.h; sourceTree = "<group>"; };
 		DDCD45F219948EA700428341 /* CountScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountScoreView.m; sourceTree = "<group>"; };
-		DDCD45F81994A6BF00428341 /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
 		DDCD45FA1994B14100428341 /* FailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailView.h; sourceTree = "<group>"; };
 		DDCD45FB1994B14100428341 /* FailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailView.m; sourceTree = "<group>"; };
 		DDCD45FD1994B15500428341 /* FailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailView.xib; sourceTree = "<group>"; };
@@ -428,6 +429,10 @@
 		DDCD46051994B38400428341 /* fail_retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_retry.png; sourceTree = "<group>"; };
 		DDCD46061994B38400428341 /* fail_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_shadow.png; sourceTree = "<group>"; };
 		DDCD46071994B38400428341 /* fail_word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_word.png; sourceTree = "<group>"; };
+		DDCD46101994CE0300428341 /* RecordNewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordNewView.h; sourceTree = "<group>"; };
+		DDCD46111994CE0300428341 /* RecordNewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordNewView.m; sourceTree = "<group>"; };
+		DDCD46131994CE5300428341 /* RecordNewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordNewView.xib; sourceTree = "<group>"; };
+		DDCD46151994D5AC00428341 /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
 		DDCDCF53198F272500A7C5F7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		DDCDCF54198F272500A7C5F7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		DDCDCF58198F290400A7C5F7 /* CancelAnimationNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelAnimationNavViewController.h; sourceTree = "<group>"; };
@@ -811,7 +816,7 @@
 		DD0B66A6198E7E0D0020CC9F /* musics */ = {
 			isa = PBXGroup;
 			children = (
-				DDCD45F81994A6BF00428341 /* sound.bundle */,
+				DDCD46151994D5AC00428341 /* sound.bundle */,
 				DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */,
 			);
 			path = musics;
@@ -870,6 +875,9 @@
 				DDCD45FA1994B14100428341 /* FailView.h */,
 				DDCD45FB1994B14100428341 /* FailView.m */,
 				DDCD45FD1994B15500428341 /* FailView.xib */,
+				DDCD46101994CE0300428341 /* RecordNewView.h */,
+				DDCD46111994CE0300428341 /* RecordNewView.m */,
+				DDCD46131994CE5300428341 /* RecordNewView.xib */,
 			);
 			path = Stage01;
 			sourceTree = "<group>";
@@ -1027,6 +1035,7 @@
 				DD0B66C7198E7E0D0020CC9F /* Icon-Small.png in Resources */,
 				DD0B6719198E7E0D0020CC9F /* select_lock_center.png in Resources */,
 				DD0B66C2198E7E0D0020CC9F /* Default@2x.png in Resources */,
+				DDCD46161994D5AC00428341 /* sound.bundle in Resources */,
 				DD0B66FC198E7E0D0020CC9F /* ready.png in Resources */,
 				DD0B6714198E7E0D0020CC9F /* select_image21.png in Resources */,
 				DD0B66DC198E7E0D0020CC9F /* cureent_score.png in Resources */,
@@ -1035,7 +1044,6 @@
 				DD0B6708198E7E0D0020CC9F /* select_image09.png in Resources */,
 				DD5C7E5619913EA3002E89FE /* select_stage_s03.png in Resources */,
 				DD0B671A198E7E0D0020CC9F /* select_lock_left.png in Resources */,
-				DDCD45F91994A6BF00428341 /* sound.bundle in Resources */,
 				DD0B66F8198E7E0D0020CC9F /* go.png in Resources */,
 				DD0B671C198E7E0D0020CC9F /* select_new.png in Resources */,
 				DD56CAAC199399660072ECFA /* bt_setting.png in Resources */,
@@ -1148,6 +1156,7 @@
 				DD0B6702198E7E0D0020CC9F /* select_image03.png in Resources */,
 				DD0B671E198E7E0D0020CC9F /* select_shadow.png in Resources */,
 				DD0B66AC198E7E0D0020CC9F /* home_bg.jpg in Resources */,
+				DDCD46141994CE5300428341 /* RecordNewView.xib in Resources */,
 				DD0B66EF198E7E0D0020CC9F /* score_f.png in Resources */,
 				DD0B6728198E7E0D0020CC9F /* select_unlock.png in Resources */,
 				DD0B66BF198E7E0D0020CC9F /* guide23.png in Resources */,
@@ -1187,6 +1196,7 @@
 			files = (
 				DDCDCF5A198F290400A7C5F7 /* CancelAnimationNavViewController.m in Sources */,
 				DD762D121990057300C3ED45 /* StageListView.m in Sources */,
+				DDCD46121994CE0300428341 /* RecordNewView.m in Sources */,
 				DD6220BB19928D2C00CB4B53 /* ReadyGoView.m in Sources */,
 				DDCD45F319948EA700428341 /* CountScoreView.m in Sources */,
 				DD0B6618198E6E2D0020CC9F /* main.m in Sources */,

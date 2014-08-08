@@ -31,3 +31,10 @@
 
 // 监狱掉下来
 #define kSoundCageDrop @"cageDrop.mp3"
+
+// 新纪录的声音
+#define kSoundRecordNew2 @"hiScore02.mp3"
+#define kSoundRecordNew1 @"hiScore01.mp3"
+
+
+

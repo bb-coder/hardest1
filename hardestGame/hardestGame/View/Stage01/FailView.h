@@ -15,7 +15,7 @@
 - (IBAction)home;
 @property (weak, nonatomic) IBOutlet UILabel *ownerScore;
 @property (weak, nonatomic) IBOutlet UILabel *condition;
-
+@property (nonatomic,assign) double scoreNew;
 
 - (void)begin;
 @end

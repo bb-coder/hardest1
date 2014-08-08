@@ -16,42 +16,42 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // 测试代码
-    StageRecord *m1 = [[StageRecord alloc] init];
-    m1.stageId = 1;
-    m1.score = 2;
-    m1.rank = @"f";
-    m1.unlocked = YES;
-    
-    StageRecord *m2 = [[StageRecord alloc] init];
-    m2.stageId = 2;
-    m2.score = 9.2;
-    m2.rank = @"s";
-    m2.unlocked = YES;
-    
-    StageRecord *m3 = [[StageRecord alloc] init];
-    m3.stageId = 3;
-    m3.score = 1120;
-    m3.rank = @"c";
-    m3.unlocked = YES;
-    
-    StageRecord *m4 = [[StageRecord alloc] init];
-    m4.stageId = 4;
-    m4.score = 205;
-    m4.rank = @"s";
-    m4.unlocked = YES;
-    
-    StageRecord *m5 = [[StageRecord alloc] init];
-    m5.stageId = 5;
-    m5.score = 27;
-    m5.rank = @"a";
-    m5.unlocked = YES;
-    
-    StageRecord *m6 = [[StageRecord alloc] init];
-    m6.stageId = 6;
-    //m6.unlocked = YES;
-    
-    [[StageRecordTool shareStageRecordTool] saveStageRecords:@[m1, m2, m3, m4, m5, m6]];
-    
+//    StageRecord *m1 = [[StageRecord alloc] init];
+//    m1.stageId = 1;
+//    m1.score = 2;
+//    m1.rank = @"f";
+//    m1.unlocked = YES;
+//    
+//    StageRecord *m2 = [[StageRecord alloc] init];
+//    m2.stageId = 2;
+//    m2.score = 9.2;
+//    m2.rank = @"s";
+//    m2.unlocked = YES;
+//    
+//    StageRecord *m3 = [[StageRecord alloc] init];
+//    m3.stageId = 3;
+//    m3.score = 1120;
+//    m3.rank = @"c";
+//    m3.unlocked = YES;
+//    
+//    StageRecord *m4 = [[StageRecord alloc] init];
+//    m4.stageId = 4;
+//    m4.score = 205;
+//    m4.rank = @"s";
+//    m4.unlocked = YES;
+//    
+//    StageRecord *m5 = [[StageRecord alloc] init];
+//    m5.stageId = 5;
+//    m5.score = 27;
+//    m5.rank = @"a";
+//    m5.unlocked = YES;
+//    
+//    StageRecord *m6 = [[StageRecord alloc] init];
+//    m6.stageId = 6;
+//    //m6.unlocked = YES;
+//    
+//    [[StageRecordTool shareStageRecordTool] saveStageRecords:@[m1, m2, m3, m4, m5, m6]];
+//    
     // Override point for customization after application launch.
     return YES;
 }

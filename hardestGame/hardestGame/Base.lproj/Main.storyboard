@@ -472,9 +472,29 @@
                                 </connections>
                             </view>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" image="score_f.png" id="yYX-LT-Tmy">
-                                <rect key="frame" x="91" y="200" width="138" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="91" y="185" width="138" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DBr-ZY-Nva">
+                                <rect key="frame" x="20" y="400" width="67" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="rank_retry.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retry" destination="hsR-KV-BSI" eventType="touchUpInside" id="gof-qn-jFb"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v0R-Il-lqJ">
+                                <rect key="frame" x="118" y="401" width="116" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="rank_home.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backList" destination="hsR-KV-BSI" eventType="touchUpInside" id="ZUT-3v-t3y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -672,6 +692,8 @@
         <image name="page_right.png" width="76" height="78"/>
         <image name="pagedot01.png" width="16" height="16"/>
         <image name="pagedot02.png" width="34" height="34"/>
+        <image name="rank_home.png" width="259" height="128"/>
+        <image name="rank_retry.png" width="130" height="128"/>
         <image name="rbg1.jpeg" width="214" height="1136"/>
         <image name="rbt.png" width="214" height="208"/>
         <image name="ready.png" width="616" height="209"/>
