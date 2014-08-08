@@ -16,3 +16,18 @@
 #define kSoundDropTitle(n) [NSString stringWithFormat:@"drop_title_%d.mp3",n]
 #define kSoundReadyGo @"ready_go.mp3"
 #define kSoundTap @"tap.mp3"
+// 关卡等级的声音
+#define kSoundGrade(i) [NSString stringWithFormat:@"scoreGrade%d.mp3", i]
+// 普通等级
+#define kSoundNormalGrade @"normalScore.mp3"
+// S等级
+#define kSoundSGrade @"getGradeS.mp3"
+
+// 人掉下来
+#define kSoundFailDrop @"failDrop.mp3"
+
+// 人惨叫
+#define kSoundFailShout @"failShout.mp3"
+
+// 监狱掉下来
+#define kSoundCageDrop @"cageDrop.mp3"

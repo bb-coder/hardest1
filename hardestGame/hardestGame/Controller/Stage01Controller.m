@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "SoundTool.h"
 #import "PauseViewController.h"
+#import "CountScoreViewController.h"
 #define kFeetTime (1 + arc4random_uniform(5)/10.0)
 @interface Stage01Controller()
 {
@@ -24,6 +25,7 @@
 
 -(void)viewDidLoad
 {
+    [super viewDidLoad];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(willEnterForeground) name:@"applicationWillEnterForeground" object:nil];
     [self.view setUserInteractionEnabled:NO];
     [self guideDisplay];
@@ -91,6 +93,7 @@
     [_timer invalidate];
     [self.view setUserInteractionEnabled:NO];
     _leftTime = 0;
+    [self performSegueWithIdentifier:@"countscore" sender:nil];
 }
 - (void) updateTimeLabel:(CADisplayLink *) timer
 {
@@ -152,11 +155,20 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([segue.identifier isEqualToString:@"countscore"]) {
+        CountScoreViewController * vc = segue.destinationViewController;
+        vc.info = _info;
+        vc.scoreNew = _hitCount;
+        
+    }
+    else
+    {
     PauseViewController * vc = segue.destinationViewController;
     vc.reusem = ^{
         [_readyGoView start:^{
             _timer.Paused = NO;
         }];
     };
+    }
 }
 @end

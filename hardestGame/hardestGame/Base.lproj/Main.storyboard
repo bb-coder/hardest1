@@ -421,11 +421,77 @@
                         <outlet property="scoreBoardView" destination="MSJ-de-18M" id="X1b-r4-3mJ"/>
                         <outlet property="scoreLabel" destination="LRT-g8-X5D" id="iOV-Bz-3q9"/>
                         <segue destination="K4l-Og-SgE" kind="push" identifier="pause" id="JYA-7t-cNr"/>
+                        <segue destination="hsR-KV-BSI" kind="push" identifier="countscore" id="aYo-aH-CTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fH-HJ-SwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1425" y="-5"/>
+        </scene>
+        <!--Count Score View Controller-->
+        <scene sceneID="BCD-sZ-axh">
+            <objects>
+                <viewController id="hsR-KV-BSI" customClass="CountScoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqx-aN-Y5f" customClass="FullBgView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="uEz-Ky-4di" customClass="CountScoreView">
+                                <rect key="frame" x="30" y="5" width="320" height="120"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UEQ-69-vzi">
+                                        <rect key="frame" x="40" y="-8" width="188" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mGE-ji-4Nk">
+                                        <rect key="frame" x="177" y="19" width="64" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="score_border.png" id="2Bw-nW-TVD">
+                                        <rect key="frame" x="144" y="40" width="108" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="score_hint.png" id="ynm-YS-qht">
+                                        <rect key="frame" x="311" y="55" width="17" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="scoreBorder" destination="2Bw-nW-TVD" id="jeV-PM-r6S"/>
+                                    <outlet property="scoreHint" destination="ynm-YS-qht" id="RoR-pB-12B"/>
+                                    <outlet property="scoreLabel" destination="UEQ-69-vzi" id="hec-Q3-kTZ"/>
+                                    <outlet property="unitLabel" destination="mGE-ji-4Nk" id="qei-PT-kC4"/>
+                                </connections>
+                            </view>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" image="score_f.png" id="yYX-LT-Tmy">
+                                <rect key="frame" x="91" y="200" width="138" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Xv-JC-oPN"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="coutScoreView" destination="uEz-Ky-4di" id="j9h-Uj-qtq"/>
+                        <outlet property="rankLabel" destination="yYX-LT-Tmy" id="3A2-cf-OUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5I-Gg-At7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="-397"/>
         </scene>
         <!--Pause View Controller-->
         <scene sceneID="RJj-jZ-kJg">
@@ -524,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sl3-1R-yBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-5"/>
+            <point key="canvasLocation" x="1921" y="472"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="caH-Wc-Lap">
@@ -614,6 +680,9 @@
         <image name="ready_play.png" width="238" height="75"/>
         <image name="ready_score.png" width="614" height="180"/>
         <image name="ready_score_arrow.png" width="78" height="221"/>
+        <image name="score_border.png" width="230" height="238"/>
+        <image name="score_f.png" width="292" height="393"/>
+        <image name="score_hint.png" width="46" height="172"/>
         <image name="select_image01.png" width="253" height="206"/>
         <image name="select_shadow.png" width="132" height="25"/>
         <image name="select_stage_normal.png" width="299" height="254"/>

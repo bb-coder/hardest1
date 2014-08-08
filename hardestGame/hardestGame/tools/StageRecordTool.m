@@ -16,7 +16,7 @@
 
 @end
 
-
+@implementation StageRecordTool
 singletonImplementation(StageRecordTool)
 
 - (instancetype)init

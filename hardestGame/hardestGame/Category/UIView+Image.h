@@ -10,4 +10,5 @@
 
 @interface UIView (Image)
 - (void) setFullScreenBgImageWithName:(NSString *) name;
+- (void)clearAlias;
 @end

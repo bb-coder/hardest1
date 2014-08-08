@@ -4,12 +4,12 @@
 
 
 //@interface
-#define singletonInterface(className) +(className *) share##className;
+#define singletonInterface(className)\
++(className *) share##className;
 
 //@implementation
 #define singletonImplementation(className) \
 static className * _instance;\
-@implementation className\
 +(id)allocWithZone:(struct _NSZone *)zone\
 {\
     static dispatch_once_t onceToken;\

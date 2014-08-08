@@ -35,7 +35,6 @@
 		DD0B66B8198E7E0D0020CC9F /* guide00.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B662E198E7E0D0020CC9F /* guide00.png */; };
 		DD0B66B9198E7E0D0020CC9F /* guide01.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B662F198E7E0D0020CC9F /* guide01.png */; };
 		DD0B66BA198E7E0D0020CC9F /* guide10.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6630198E7E0D0020CC9F /* guide10.png */; };
-		DD0B66BB198E7E0D0020CC9F /* guide11.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6631198E7E0D0020CC9F /* guide11.png */; };
 		DD0B66BC198E7E0D0020CC9F /* guide20.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6632198E7E0D0020CC9F /* guide20.png */; };
 		DD0B66BD198E7E0D0020CC9F /* guide21.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6633198E7E0D0020CC9F /* guide21.png */; };
 		DD0B66BE198E7E0D0020CC9F /* guide22.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6634198E7E0D0020CC9F /* guide22.png */; };
@@ -146,7 +145,6 @@
 		DD0B6727198E7E0D0020CC9F /* select_stage_s.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A4198E7E0D0020CC9F /* select_stage_s.png */; };
 		DD0B6728198E7E0D0020CC9F /* select_unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A5198E7E0D0020CC9F /* select_unlock.png */; };
 		DD0B6729198E7E0D0020CC9F /* bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */; };
-		DD0B672A198E7E0D0020CC9F /* sounds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66A8198E7E0D0020CC9F /* sounds.bundle */; };
 		DD0B672B198E7E0D0020CC9F /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0B66AA198E7E0D0020CC9F /* home.plist */; };
 		DD0B672E198E7FA10020CC9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B672D198E7FA10020CC9F /* Images.xcassets */; };
 		DD56CA98199389A40072ECFA /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56CA97199389A40072ECFA /* PauseViewController.m */; };
@@ -183,6 +181,20 @@
 		DD762D15199005D000C3ED45 /* StageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD762D14199005D000C3ED45 /* StageView.m */; };
 		DD8F9780198E8E3F00D4F80D /* FullBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F977F198E8E3F00D4F80D /* FullBgView.m */; };
 		DD8F9784198E931D00D4F80D /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F9783198E931D00D4F80D /* UIView+Image.m */; };
+		DDCD45F01994891800428341 /* CountScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45EF1994891800428341 /* CountScoreViewController.m */; };
+		DDCD45F319948EA700428341 /* CountScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45F219948EA700428341 /* CountScoreView.m */; };
+		DDCD45F71994A37E00428341 /* guide11.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6631198E7E0D0020CC9F /* guide11.png */; };
+		DDCD45F91994A6BF00428341 /* sound.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDCD45F81994A6BF00428341 /* sound.bundle */; };
+		DDCD45FC1994B14100428341 /* FailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD45FB1994B14100428341 /* FailView.m */; };
+		DDCD45FE1994B15500428341 /* FailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCD45FD1994B15500428341 /* FailView.xib */; };
+		DDCD46081994B38400428341 /* fail_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46001994B38400428341 /* fail_bg.jpg */; };
+		DDCD46091994B38400428341 /* fail_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46011994B38400428341 /* fail_boy.png */; };
+		DDCD460A1994B38400428341 /* fail_home.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46021994B38400428341 /* fail_home.png */; };
+		DDCD460B1994B38400428341 /* fail_kanban.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46031994B38400428341 /* fail_kanban.png */; };
+		DDCD460C1994B38400428341 /* fail_prison.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46041994B38400428341 /* fail_prison.png */; };
+		DDCD460D1994B38400428341 /* fail_retry.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46051994B38400428341 /* fail_retry.png */; };
+		DDCD460E1994B38400428341 /* fail_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46061994B38400428341 /* fail_shadow.png */; };
+		DDCD460F1994B38400428341 /* fail_word.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCD46071994B38400428341 /* fail_word.png */; };
 		DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF54198F272500A7C5F7 /* SettingViewController.m */; };
 		DDCDCF5A198F290400A7C5F7 /* CancelAnimationNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF59198F290400A7C5F7 /* CancelAnimationNavViewController.m */; };
 		DDCDCF5E198F2FAD00A7C5F7 /* SoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCDCF5D198F2FAD00A7C5F7 /* SoundTool.m */; };
@@ -347,7 +359,6 @@
 		DD0B66A4198E7E0D0020CC9F /* select_stage_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_s.png; sourceTree = "<group>"; };
 		DD0B66A5198E7E0D0020CC9F /* select_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_unlock.png; sourceTree = "<group>"; };
 		DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_music.mp3; sourceTree = "<group>"; };
-		DD0B66A8198E7E0D0020CC9F /* sounds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sounds.bundle; sourceTree = "<group>"; };
 		DD0B66AA198E7E0D0020CC9F /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
 		DD0B672D198E7FA10020CC9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD56CA96199389A40072ECFA /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
@@ -401,6 +412,22 @@
 		DD8F977F198E8E3F00D4F80D /* FullBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullBgView.m; sourceTree = "<group>"; };
 		DD8F9782198E931D00D4F80D /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		DD8F9783198E931D00D4F80D /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		DDCD45EE1994891800428341 /* CountScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountScoreViewController.h; sourceTree = "<group>"; };
+		DDCD45EF1994891800428341 /* CountScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountScoreViewController.m; sourceTree = "<group>"; };
+		DDCD45F119948EA700428341 /* CountScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountScoreView.h; sourceTree = "<group>"; };
+		DDCD45F219948EA700428341 /* CountScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountScoreView.m; sourceTree = "<group>"; };
+		DDCD45F81994A6BF00428341 /* sound.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sound.bundle; sourceTree = "<group>"; };
+		DDCD45FA1994B14100428341 /* FailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailView.h; sourceTree = "<group>"; };
+		DDCD45FB1994B14100428341 /* FailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailView.m; sourceTree = "<group>"; };
+		DDCD45FD1994B15500428341 /* FailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailView.xib; sourceTree = "<group>"; };
+		DDCD46001994B38400428341 /* fail_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fail_bg.jpg; sourceTree = "<group>"; };
+		DDCD46011994B38400428341 /* fail_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_boy.png; sourceTree = "<group>"; };
+		DDCD46021994B38400428341 /* fail_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_home.png; sourceTree = "<group>"; };
+		DDCD46031994B38400428341 /* fail_kanban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_kanban.png; sourceTree = "<group>"; };
+		DDCD46041994B38400428341 /* fail_prison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_prison.png; sourceTree = "<group>"; };
+		DDCD46051994B38400428341 /* fail_retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_retry.png; sourceTree = "<group>"; };
+		DDCD46061994B38400428341 /* fail_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_shadow.png; sourceTree = "<group>"; };
+		DDCD46071994B38400428341 /* fail_word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail_word.png; sourceTree = "<group>"; };
 		DDCDCF53198F272500A7C5F7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		DDCDCF54198F272500A7C5F7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		DDCDCF58198F290400A7C5F7 /* CancelAnimationNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelAnimationNavViewController.h; sourceTree = "<group>"; };
@@ -548,6 +575,8 @@
 				DD6220B0199278BE00CB4B53 /* Stage01Controller.m */,
 				DD56CA96199389A40072ECFA /* PauseViewController.h */,
 				DD56CA97199389A40072ECFA /* PauseViewController.m */,
+				DDCD45EE1994891800428341 /* CountScoreViewController.h */,
+				DDCD45EF1994891800428341 /* CountScoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -565,6 +594,7 @@
 		DD0B661E198E7E0D0020CC9F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DDCD45FF1994B38400428341 /* fail */,
 				DD0B661F198E7E0D0020CC9F /* bg */,
 				DD0B6624198E7E0D0020CC9F /* btns */,
 				DD0B662D198E7E0D0020CC9F /* guides */,
@@ -781,8 +811,8 @@
 		DD0B66A6198E7E0D0020CC9F /* musics */ = {
 			isa = PBXGroup;
 			children = (
+				DDCD45F81994A6BF00428341 /* sound.bundle */,
 				DD0B66A7198E7E0D0020CC9F /* bg_music.mp3 */,
-				DD0B66A8198E7E0D0020CC9F /* sounds.bundle */,
 			);
 			path = musics;
 			sourceTree = "<group>";
@@ -837,6 +867,9 @@
 				DD6220BA19928D2C00CB4B53 /* ReadyGoView.m */,
 				DD6220BC19928D3D00CB4B53 /* ScoreBoardView.h */,
 				DD6220BD19928D3D00CB4B53 /* ScoreBoardView.m */,
+				DDCD45FA1994B14100428341 /* FailView.h */,
+				DDCD45FB1994B14100428341 /* FailView.m */,
+				DDCD45FD1994B15500428341 /* FailView.xib */,
 			);
 			path = Stage01;
 			sourceTree = "<group>";
@@ -856,6 +889,8 @@
 				DDCFCC861991E90B00003BFE /* ReadyTitleView.m */,
 				DD5DA58C1992043700227BF5 /* ReadyScoreView.h */,
 				DD5DA58D1992043700227BF5 /* ReadyScoreView.m */,
+				DDCD45F119948EA700428341 /* CountScoreView.h */,
+				DDCD45F219948EA700428341 /* CountScoreView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -869,6 +904,21 @@
 				DD5DA59219921E4E00227BF5 /* NSString+path.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		DDCD45FF1994B38400428341 /* fail */ = {
+			isa = PBXGroup;
+			children = (
+				DDCD46001994B38400428341 /* fail_bg.jpg */,
+				DDCD46011994B38400428341 /* fail_boy.png */,
+				DDCD46021994B38400428341 /* fail_home.png */,
+				DDCD46031994B38400428341 /* fail_kanban.png */,
+				DDCD46041994B38400428341 /* fail_prison.png */,
+				DDCD46051994B38400428341 /* fail_retry.png */,
+				DDCD46061994B38400428341 /* fail_shadow.png */,
+				DDCD46071994B38400428341 /* fail_word.png */,
+			);
+			path = fail;
 			sourceTree = "<group>";
 		};
 		DDCDCF5B198F2F9B00A7C5F7 /* tools */ = {
@@ -960,9 +1010,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCD45F71994A37E00428341 /* guide11.png in Resources */,
 				DD0B672B198E7E0D0020CC9F /* home.plist in Resources */,
 				DD0B66D5198E7E0D0020CC9F /* ybt.png in Resources */,
-				DD0B672A198E7E0D0020CC9F /* sounds.bundle in Resources */,
 				DD0B66B9198E7E0D0020CC9F /* guide01.png in Resources */,
 				DD0B66E1198E7E0D0020CC9F /* rank_home.png in Resources */,
 				DD0B66DA198E7E0D0020CC9F /* ready_score.png in Resources */,
@@ -985,8 +1035,8 @@
 				DD0B6708198E7E0D0020CC9F /* select_image09.png in Resources */,
 				DD5C7E5619913EA3002E89FE /* select_stage_s03.png in Resources */,
 				DD0B671A198E7E0D0020CC9F /* select_lock_left.png in Resources */,
+				DDCD45F91994A6BF00428341 /* sound.bundle in Resources */,
 				DD0B66F8198E7E0D0020CC9F /* go.png in Resources */,
-				DD0B66BB198E7E0D0020CC9F /* guide11.png in Resources */,
 				DD0B671C198E7E0D0020CC9F /* select_new.png in Resources */,
 				DD56CAAC199399660072ECFA /* bt_setting.png in Resources */,
 				DD0B66E5198E7E0D0020CC9F /* scene_light02.png in Resources */,
@@ -1006,8 +1056,10 @@
 				DD56CAAA199399660072ECFA /* bt_home.png in Resources */,
 				DD0B66F7198E7E0D0020CC9F /* 01_miss.png in Resources */,
 				DD0B66F1198E7E0D0020CC9F /* score_s.png in Resources */,
+				DDCD46081994B38400428341 /* fail_bg.jpg in Resources */,
 				DD0B66ED198E7E0D0020CC9F /* score_d.png in Resources */,
 				DD0B66F3198E7E0D0020CC9F /* 01-btfeather.png in Resources */,
+				DDCD460F1994B38400428341 /* fail_word.png in Resources */,
 				DD0B66BE198E7E0D0020CC9F /* guide22.png in Resources */,
 				DD0B6720198E7E0D0020CC9F /* select_stage_b.png in Resources */,
 				DD0B66E6198E7E0D0020CC9F /* scene_light03.png in Resources */,
@@ -1015,6 +1067,7 @@
 				DD0B66CD198E7E0D0020CC9F /* bbt.png in Resources */,
 				DD0B671B198E7E0D0020CC9F /* select_lock_right.png in Resources */,
 				DD0B66CA198E7E0D0020CC9F /* Icon@2x.png in Resources */,
+				DDCD460C1994B38400428341 /* fail_prison.png in Resources */,
 				DD56CAAD199399660072ECFA /* page_left.png in Resources */,
 				DD5C7E5419913EA3002E89FE /* select_stage_s01.png in Resources */,
 				DD0B6706198E7E0D0020CC9F /* select_image07.png in Resources */,
@@ -1031,6 +1084,7 @@
 				DD0B6711198E7E0D0020CC9F /* select_image18.png in Resources */,
 				DD0B670A198E7E0D0020CC9F /* select_image11.png in Resources */,
 				DD0B66C3198E7E0D0020CC9F /* Icon-72.png in Resources */,
+				DDCD460B1994B38400428341 /* fail_kanban.png in Resources */,
 				DD0B6707198E7E0D0020CC9F /* select_image08.png in Resources */,
 				DD5DA59019920F7500227BF5 /* stages.plist in Resources */,
 				DD0B6718198E7E0D0020CC9F /* select_insane_bg.jpg in Resources */,
@@ -1043,6 +1097,7 @@
 				DD0B66FA198E7E0D0020CC9F /* ing_retry.png in Resources */,
 				DD5C7E5819914736002E89FE /* StageView.xib in Resources */,
 				DD0B66CC198E7E0D0020CC9F /* bbg2.jpeg in Resources */,
+				DDCD460A1994B38400428341 /* fail_home.png in Resources */,
 				DD56CAB0199399660072ECFA /* pagedot02.png in Resources */,
 				DD0B6700198E7E0D0020CC9F /* select_image01.png in Resources */,
 				DD0B670D198E7E0D0020CC9F /* select_image14.png in Resources */,
@@ -1051,6 +1106,7 @@
 				DD0B66D2198E7E0D0020CC9F /* rbt.png in Resources */,
 				DD0B6717198E7E0D0020CC9F /* select_image24.png in Resources */,
 				DD0B672E198E7FA10020CC9F /* Images.xcassets in Resources */,
+				DDCD460E1994B38400428341 /* fail_shadow.png in Resources */,
 				DD0B66E2198E7E0D0020CC9F /* rank_retry.png in Resources */,
 				DD0B670F198E7E0D0020CC9F /* select_image16.png in Resources */,
 				DD0B6727198E7E0D0020CC9F /* select_stage_s.png in Resources */,
@@ -1059,11 +1115,13 @@
 				DD0B6709198E7E0D0020CC9F /* select_image10.png in Resources */,
 				DD56CAA6199399660072ECFA /* ad01.png in Resources */,
 				DD0B66B7198E7E0D0020CC9F /* bt_setting.png in Resources */,
+				DDCD460D1994B38400428341 /* fail_retry.png in Resources */,
 				DD0B66B5198E7E0D0020CC9F /* bt_menu.png in Resources */,
 				DD0B66BD198E7E0D0020CC9F /* guide21.png in Resources */,
 				DD0B6710198E7E0D0020CC9F /* select_image17.png in Resources */,
 				DD0B6721198E7E0D0020CC9F /* select_stage_c.png in Resources */,
 				DD56CAA7199399660072ECFA /* ad02.png in Resources */,
+				DDCD45FE1994B15500428341 /* FailView.xib in Resources */,
 				DD0B66FB198E7E0D0020CC9F /* ing_word.png in Resources */,
 				DD0B6704198E7E0D0020CC9F /* select_image05.png in Resources */,
 				DD56CAAF199399660072ECFA /* pagedot01.png in Resources */,
@@ -1077,6 +1135,7 @@
 				DD0B66AD198E7E0D0020CC9F /* loading_bg.jpg in Resources */,
 				DD0B6701198E7E0D0020CC9F /* select_image02.png in Resources */,
 				DD0B66FE198E7E0D0020CC9F /* select_easy_bg.jpg in Resources */,
+				DDCD46091994B38400428341 /* fail_boy.png in Resources */,
 				DD0B66B3198E7E0D0020CC9F /* bt_green.png in Resources */,
 				DD0B6703198E7E0D0020CC9F /* select_image04.png in Resources */,
 				DD0B66B8198E7E0D0020CC9F /* guide00.png in Resources */,
@@ -1129,6 +1188,7 @@
 				DDCDCF5A198F290400A7C5F7 /* CancelAnimationNavViewController.m in Sources */,
 				DD762D121990057300C3ED45 /* StageListView.m in Sources */,
 				DD6220BB19928D2C00CB4B53 /* ReadyGoView.m in Sources */,
+				DDCD45F319948EA700428341 /* CountScoreView.m in Sources */,
 				DD0B6618198E6E2D0020CC9F /* main.m in Sources */,
 				DD762D15199005D000C3ED45 /* StageView.m in Sources */,
 				DD5DA59319921E4E00227BF5 /* NSString+path.m in Sources */,
@@ -1145,8 +1205,10 @@
 				DD6220B1199278BE00CB4B53 /* Stage01Controller.m in Sources */,
 				DD6220B819928CE100CB4B53 /* FeatherView.m in Sources */,
 				DD0B6617198E6E2D0020CC9F /* AppDelegate.m in Sources */,
+				DDCD45FC1994B14100428341 /* FailView.m in Sources */,
 				DD6220BE19928D3D00CB4B53 /* ScoreBoardView.m in Sources */,
 				DD6220B519928CD000CB4B53 /* FeetView.m in Sources */,
+				DDCD45F01994891800428341 /* CountScoreViewController.m in Sources */,
 				DDCFCC871991E90B00003BFE /* ReadyTitleView.m in Sources */,
 				DD762D0F1990052600C3ED45 /* PlayViewController.m in Sources */,
 				DDCDCF56198F272500A7C5F7 /* SettingViewController.m in Sources */,

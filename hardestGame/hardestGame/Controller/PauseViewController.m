@@ -21,6 +21,7 @@
 
 -(void)viewDidLoad
 {
+    [super viewDidLoad];
     [self.view setFullScreenBgImageWithName:@"pause_bg.jpg"];
     _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(step) userInfo:nil repeats:YES];
     _currentPageIndex = 1;

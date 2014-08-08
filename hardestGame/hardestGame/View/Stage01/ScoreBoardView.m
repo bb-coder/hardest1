@@ -12,6 +12,7 @@
 {
     self.layer.anchorPoint = CGPointMake(0, 1);
     self.layer.position = CGPointMake(-100, 150);
+    [self clearAlias];
 }
 - (void)start
 {

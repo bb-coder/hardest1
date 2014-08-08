@@ -13,6 +13,7 @@
 
 -(void)viewDidLoad
 {
+    [super viewDidLoad];
     _readyView.info = _info;
     _readyView.removeTitleView = ^{
         _readyScoreView.info = _info;

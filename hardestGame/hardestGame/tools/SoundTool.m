@@ -15,6 +15,7 @@
 }
 @end
 static SoundTool * tool;
+@implementation SoundTool
 singletonImplementation(SoundTool)
 
 - (instancetype)init
@@ -34,7 +35,6 @@ singletonImplementation(SoundTool)
 -(void)loadMusic
 {
     NSURL * url = [[NSBundle mainBundle] URLForResource:kBgMusicFileName withExtension:nil];
-    
     _player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
     
     [_player prepareToPlay];
@@ -45,7 +45,7 @@ singletonImplementation(SoundTool)
 -(void)loadSound
 {
     _soundsIds = [NSMutableDictionary dictionary];
-    NSURL * url = [[NSBundle mainBundle] URLForResource:@"sounds.bundle" withExtension:nil];
+    NSURL * url = [[NSBundle mainBundle] URLForResource:@"sound.bundle" withExtension:nil];
     NSBundle * bundle = [NSBundle bundleWithURL:url];
     NSArray * urls = [bundle URLsForResourcesWithExtension:@"mp3" subdirectory:nil];
     
